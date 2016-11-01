@@ -128,9 +128,16 @@ nav a:hover
 	}
 }
 
+#liens
+{
+	width: 80%;
+	margin:0 10%;
+}
+
 #liens img
 {
-	width: 20px;
+	width: 25px;
+	margin: 5px;
 }
 
 #copyright
