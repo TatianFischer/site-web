@@ -1,0 +1,202 @@
+/* Contenu de la page */
+nav ul li:nth-child(2)
+{
+	font-weight: bold;
+}
+
+#wrap
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+	padding: 0;
+	background: url(images/fondSite.jpg) repeat center fixed;
+	background-size: cover;
+}
+
+@media all and (max-width: 700px)
+{
+	#wrap
+	{
+		font-size: 0.8em;
+	}
+}
+
+#page
+{
+	width: 98%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 1em;
+}
+
+@media all and (max-width: 480px)
+{
+	#page
+	{
+		flex-direction: column-reverse;
+		width: 95%;
+	}
+}
+
+a
+{
+	text-decoration: none;
+	color: black;
+}
+#page a:hover
+{
+	color: #1D88A9;
+}
+
+#page ul
+{
+	list-style-type: none;
+	padding-left: 0em;
+}
+
+#page li
+{
+	margin-top: 0.5em;
+}
+
+
+header
+{
+	text-align: center;
+	font-size: 2.2em;
+	color: #666666;
+	font-variant: small-caps;
+}
+
+#contenu
+{
+	width: 70%;
+	height: 100%
+	text-align: left;
+	color: black;
+
+}
+
+@media all and (max-width: 480px)
+{
+	#contenu
+	{
+		width: 100%;
+	}
+}
+
+#contenu h1
+{
+	font-size: 1.8em;
+	line-height: 1em;
+}
+
+#contenu h2
+{
+	font-size: 1.5em;
+	line-height: 1em;
+}
+
+#contenu h3
+{
+	font-size: 1.0em;
+	line-height: 1em;
+}
+
+.rubrique
+{
+	margin-bottom: 3em;
+}
+
+.rubrique p
+{
+	margin-bottom: 1em;
+}
+
+#competence
+{
+	width: 25%;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media all and (max-width: 480px)
+{
+	#competence
+	{
+		width: 100%;
+		justify-content: flex-start;
+		min-height: 10%;
+	}
+
+	#competence div
+	{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: wrap;
+	}
+}
+
+#competence h1
+{
+	font-size: 1.2em;
+}
+
+@media all and (max-width: 700px)
+{
+	#competence h1
+	{
+		margin-bottom: 0em;
+	}
+	#competence ul
+	{
+		margin-top: 0em;
+	}
+}
+
+.barre
+{
+	width: 70%;
+	background-color: #d5d6e1;
+	border: 2px solid #d5d6e1;
+	position: relative;
+	height: 10px;
+	margin-bottom: 1.5em;
+}
+
+@media all and (max-width: 450px)
+{
+	.barre
+	{
+		margin-bottom: 0em;
+	}
+}
+
+.barre::after
+{
+	content: "";
+	position: absolute;
+	background: #1D88A9;
+	left: 0;
+	top: 0;
+	bottom: 0;
+}
+
+.barre[data-length="10"]:after { width: 10% }
+.barre[data-length="20"]:after { width: 20% }
+.barre[data-length="30"]:after { width: 30% }
+.barre[data-length="40"]:after { width: 40% }
+.barre[data-length="50"]:after { width: 50% }
+.barre[data-length="60"]:after { width: 60% }
+.barre[data-length="70"]:after { width: 70% }
+.barre[data-length="80"]:after { width: 80% }
+.barre[data-length="90"]:after { width: 90% }
+.barre[data-length="100"]:after { width: 100% }

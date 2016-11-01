@@ -1,0 +1,55 @@
+/* Contenu de la page */
+nav ul li:nth-child(1)
+{
+	font-weight: bold;
+}
+
+#page
+{
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+	margin: 0;
+	padding: 0;
+	background: url(images/fondSite.jpg) repeat center fixed;
+	background-size: cover; /* Version standardisée */
+}
+
+@media all and (max-width: 480px)
+{
+	#page
+	{
+		font-size: 0.6em;
+		min-height: 450px;
+	}
+}
+
+@media all and (max-width: 700px) and (min-width: 480px)
+{
+	#page
+	{
+		min-height: 650px;
+		font-size: 0.8em;
+	}
+}
+
+
+#conteneur
+{
+	text-align: center;
+	color: #545454;
+}
+
+#bouton
+{
+	border: 2px #a2a3aa solid;
+	border-radius: 5px;
+	height: 35px;
+	width: 33px;
+	background-color: #D5D6E1;
+	margin: auto;
+}
