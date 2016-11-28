@@ -4,8 +4,7 @@ nav ul li:nth-child(1)
 	font-weight: bold;
 }
 
-#page
-{
+#page{
 	width: 100%;
 	display: flex;
 	flex-direction: column;
@@ -15,8 +14,6 @@ nav ul li:nth-child(1)
 
 	margin: 0;
 	padding: 0;
-	background: url(images/fondSite.jpg) repeat center fixed;
-	background-size: cover; /* Version standardisée */
 }
 
 @media all and (max-width: 480px)
@@ -41,7 +38,8 @@ nav ul li:nth-child(1)
 #conteneur
 {
 	text-align: center;
-	color: #545454;
+	color: #bec2ef;
+    margin: 40px 0;
 }
 
 #bouton
@@ -50,6 +48,6 @@ nav ul li:nth-child(1)
 	border-radius: 5px;
 	height: 35px;
 	width: 33px;
-	background-color: #D5D6E1;
+	background-color: #bec2ef;
 	margin: auto;
 }

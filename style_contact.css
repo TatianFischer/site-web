@@ -1,4 +1,4 @@
-﻿/* Contenu de la page */
+/* Contenu de la page */
 nav ul li:nth-child(4)
 {
 	font-weight: bold;
@@ -23,15 +23,6 @@ nav ul li:nth-child(4)
 #page>*
 {
 	margin: 0.5em 0em;
-}
-
-header
-{
-	text-align: center;
-	font-size: 2.2em;
-	color: #666666;
-	font-weight: bold;
-	font-variant: small-caps;
 }
 
 #conteneur
