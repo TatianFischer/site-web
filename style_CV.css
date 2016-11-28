@@ -141,12 +141,13 @@ a
             CONTENU
 --------------------------------*/
 #contenu{
-	width: 90%;
-	min-height: 900px;
+	width: 95%;
+	min-height: 925px;
     position: relative;
     display:block;
 	text-align: left;
     margin-top: 4rem;
+    margin-bottom: 4rem;
 }
 
 .tab{
@@ -157,7 +158,7 @@ a
     top: 1rem;
     cursor: pointer;
     border-radius: 5px 5px 0 0;
-    padding: 0.5rem 3.74rem;
+    padding: 0.5rem 4.5rem;
     background-color:#bec2ef;
     color: #36204e;
 	font-size: 26px;
@@ -184,7 +185,7 @@ a
     height: auto;
     position: absolute;
     top:2rem; left:0; right: 0; bottom: 0;
-    padding-left: 2rem;
+    padding: 0 2rem;
     box-sizing: border-box;
     
     background:#36204e;
@@ -208,8 +209,8 @@ a
 .rubrique h2{
 	padding-top:3rem;
 	color: white;
-	font-size: 20px; 
-	font-size: 2rem;
+	font-size: 24px; 
+	font-size: 2.4rem;
 	font-weight: normal;
 	line-height: 1rem;
 }
@@ -219,14 +220,16 @@ a
 
 .rubrique h3{
 	color: white;
-	font-size: 18rem;
+	font-size: 18px;
 	font-size: 1.8rem;
 	line-height: 1rem;
+    margin:0;
+    margin-top: 3.5rem;
+    margin-bottom: 0.5rem;
 }
 
 .rubrique p{
-	margin-bottom: 5px;
-	margin-bottom: 0.5rem;
+    margin:0;
 	color: white;
 	font-size: 18px;
 	font-size: 1.8rem;

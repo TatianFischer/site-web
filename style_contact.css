@@ -15,14 +15,22 @@ nav ul li:nth-child(4)
 
 	margin: 0;
 	padding: 0;
-	background: url(images/fondSite.jpg) repeat center fixed;
-	background-size: cover; /* Version standardisée */
-	color: #545454;
 }
 
 #page>*
 {
 	margin: 0.5em 0em;
+    font-size:20px;
+    font-size: 2rem;
+    color: white;
+}
+
+#page h1{
+    font-family: 'Gloria Hallelujah', cursive;
+	color:white;
+    text-align: center;
+    font-size: 30px;
+    font-size: 3rem;
 }
 
 #conteneur
@@ -39,19 +47,14 @@ aside
 	text-align: center;
 }
 
-a
+#conteneur a
 {
 	color: #1d88a9;
-	margin:1em 0em;
+	margin:1rem;
 }
 
-#reseaux
-{
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	width: 100%;
-	vertical-align: center;
+#mobilite img{
+    width:250px;
 }
 
 @media all and (max-width: 700px)
