@@ -4,52 +4,76 @@
 		<title>C.V.</title>
 		<meta charset="utf-8">
 		<meta name="description" content="CV de Tatiana FISCHER"/>
-		<meta name="viewport" content="width=device-width,initial-scale=1" />
 		
+		<!--Pour Internet Explorer : s'assurer qu'il utilise la dernière version du moteur de rendu-->
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+        <!--Affichage sans zoom sur les mobiles-->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<!-- Bootstrap -->
+		<!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		
+		<!-- Font Awesome -->
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		
 		<!-- font-family: 'Gloria Hallelujah', cursive; -->
 		<link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
 		
-		<link rel="stylesheet" href="normalize.css" media="screen">
-		<link rel="stylesheet" href="style_menu.css" type="text/css" media="screen">
-		<link rel="stylesheet" type="text/css" href="style_CV.css" media="screen">
+		<!-- Mes feuilles de style -->
+		<link rel="stylesheet" href="assets/css/style-menu.css" media="screen">
+		<link rel="stylesheet" href="assets/css/style-CV.css" media="screen">
+		
+		<!-- HTML 5 Shiv-min script tag with SRI - Polyfill (voir p8 du cahier)-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
 	</head>
 	<body>
-		<div id="wrap_page">
-			<header>
-				<div id="titre">
-					FISCHER  Tatiana
-				</div>
-				<nav>
-					<ul>
-						<li><a href="index.html">Accueil</a></li>
-						<li><a href="CV.html">C.V.</a></li>
-						<li><a href="porfolio.html">Portfolio</a></li>
-						<li><a href="contact.html">Contact</a></li>
-					</ul>
-				</nav>
-			</header>
+		<div class="container r-p">
+<!-- Barre de navigation -->	
+            <nav class="navbar">
+                <div class="container-fluid r-p">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span> 
+                        </button>
+                        <a class="navbar-brand r-m" href="index.html">FISCHER  Tatiana</a>
+                    </div>
+                    <div class="collapse navbar-collapse r-p" id="menu">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html">Accueil</a></li>
+                            <li  class="active"><a href="CV.html">C.V.</a></li>
+                            <li><a href="porfolio.html">Portfolio</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+<!-- Fin de la barre de navigation-->
 
-			<div id="wrap">
-				<h1>Curriculum Vitae</h1>
-				<section id="page">
-				    <div id="competence">
-						<div>
-							<h1>Langages</h1>
+			<div class="row r-m">
+				<main id="page" class="col-xs-12">
+				    <h1>Curriculum Vitae</h1>
+				    
+<!-- COMPETENCES -->
+				    <section id="competence" class="row r-m">
+						<div class="col-md-4">
+							<h2>Langages</h2>
 							<ul>
 								<li>HTML5 & CSS3</li>
-								<li class="barre" data-length="60"></li>
+								<li class="barre" data-length="80"></li>
 								<li>Javascript</li>
-								<li class="barre" data-length="50"></li>
+								<li class="barre" data-length="70"></li>
 								<li>PHP</li>
 								<li class="barre" data-length="10"></li>
 								<li>Language C</li>
 								<li class="barre" data-length="40"></li>
 							</ul>
 						</div>
-						<div>
-							<h1>Outils & Burautique</h1>
+						<div class="col-md-4">
+							<h2>Outils & Burautique</h2>
 							<ul>
 								<li>Linus/GNU</li>
 								<li class="barre" data-length="50"></li>
@@ -61,28 +85,37 @@
 								<li class="barre" data-length="80"></li>
 							</ul>
 						</div>
-						<div>
-							<h1>Langues</h1>
+						<div class="col-md-4">
+							<h2>Anglais</h2>
 							<ul>
-								<li><strong>Anglais :</strong></li>
 								<li>Bonne communication et compréhension écrite.</li>
 							</ul>
-						</div>
-						<div>
-							<h1>Loisirs</h1>
+							<h2>Loisirs</h2>
 							<ul>
 								<li>Fan de films et séries TV fantastiques et policiers.</li>
 								<li>Tricomaniac.</li>
 								<li>Sciences physiques et chimiques.</li>
 							</ul>
 						</div>
-					</div>
-				    
-					<div id="contenu" class="tabs">
-                        <div class="tab">
-					        <input type="radio" name="tabgroup" id="tab-1" checked>
-					        <label for="tab-1">Formation continue</label>
-		                    <aside class="rubrique">
+					</section>
+<!-- Fin des compétences-->
+
+<!-- CONTENU -->				    
+					<section id="contenu" class="row">
+                        <ul class="nav nav-tabs nav-justified">
+                            <li class="active">
+                                <a href="#formCont" data-toggle="tab">Formation continue</a>
+                            </li>
+                            <li>
+                                <a href="#experience" data-toggle="tab">Mes expériences</a>
+                            </li>
+                            <li>
+                                <a href="#formInitiale" data-toggle="tab">Formation initiale</a>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content">					        
+		                    <aside id="formCont" class="rubrique tab-pane fade in active">
                                 <h2>Formation développeur-intégrateur web</h2>
 
                                 <h3>Novembre 2016 - Février 2017 :</h3>
@@ -119,13 +152,11 @@
 
                                 <h3>Juillet 2016 :</h3>
                                 <p>Plateforme Microsoft Virtual Academy :<br> Apprendre à coder pour les vrais débutants <br>Les fondamentaux du développent en C# - Chapitre 1 et 2.</p>
-		                    </aside>
-                        </div> <!-- FIN DE L'ONGLE 1 -->
+		                    </aside><!-- FIN DE L'ONGLE 1 -->
+                         
                            
-                        <div class="tab">
-                            <input type="radio" name="tabgroup" id="tab-2">
-                            <label for="tab-2">Mes expériences</label>   
-                            <aside class="rubrique">
+                          
+                            <aside id="experience" class="rubrique tab-pane fade">
                                <h3>Septembre 2014 à Octobre 2015 :</h3>
                                <p>Professeur de Physique Chimie en lycée.<p>
                                <h3>Janvier 2012  à  Juin 2012 :</h3>
@@ -134,13 +165,9 @@
                                <p>Stage de Magistère 2ème année à l'école Polytechnique, Palaiseau. Calculs de chimie théorique (avec le logiciel Gaussian).</p>
                                <h3>Juin 2010 à juillet 2010 :</h3>
                                <p>Stage 3ème année de Licence et 1ère année de Magistère à l'ICMMO à Orsay. Photochimie et synthèse organique.</p>
-                            </aside>
-                        </div><!-- FIN DE L'ONGLE 2 -->
+                            </aside><!-- FIN DE L'ONGLE 2 -->
 
-                        <div class="tab">
-                            <input type="radio" name="tabgroup" id="tab-3">
-                            <label for="tab-3">Ma formation</label>
-                            <aside class="rubrique">
+                            <aside id="formInitiale" class="rubrique tab-pane fade">
                                 <h3>Septembre 2012 à Juin 2014 :</h3>
                                 <p>Préparation de l'Agrégation de chimie. Centre de l'ENS ULM à Montrouge puis à l'Université Lille 1.
                                 Admissibilité.</p>
@@ -150,23 +177,24 @@
                                 <p>Master de Chimie et Physicochimie des matériaux. Dans le cadre de la 3ème année de Magistère. Mention assez bien.</p>
                                 <h3>Septembre 2009 - Juillet 2010 :</h3>
                                 <p>Licence de Chimie. Mention Bien.</p>
-                            </aside>
-                        </div><!-- FIN DE L'ONGLE 3 -->
-					</div>
-
-				</section>
+                            </aside><!-- FIN DE L'ONGLE 3 -->
+                        </div> <!-- Fin du tab-content-->
+					</section>
+<!-- Fin de la section contenu -->
+				</main>
 			</div> <!-- Fin du corps de la page -->
-			
-			<footer class="bleu">
-                <h1> Plus d'informations sur : </h1>
-                <ul id="liens">
-                    <li>
+
+<!-- FOOTERs -->			
+			<footer class="bleu row r-m">
+                <h1 class="col-sm-6"> Plus d'informations sur : </h1>
+                <ul class="col-sm-6" id="liens">
+                    <li class="col-xs-1 col-xs-offset-2">
                         <a href="http://www.viadeo.com/fr/profile/tatiana.fischer1" target="_blank"><i class="fa fa-viadeo"></i></a>
                     </li>
-                    <li>
+                    <li class="col-xs-1 col-xs-offset-3">
                         <a href="https://fr.linkedin.com/in/tatianafischer" target="_blank"><i class="fa fa-linkedin"></i></a>
                     </li>
-                    <li>
+                    <li class="col-xs-1 col-xs-offset-3">
                         <a href="https://github.com/TatianFischer" target="_blank"><i class="fa fa-github"></i></a>
                     </li>
                 </ul> <!-- fin des liens -->		
@@ -175,6 +203,14 @@
             <footer>
                 <p id="copyright">@ FISCHER Tatiana 2016</p>
             </footer>
+<!-- Fin des FOOTERs -->
 		</div> <!-- Fin de la page -->
+		
+		<!-- jQuery -->
+        <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   
+        <!-- Latest compiled and minified JavaScript. http://getbootstrap.com/getting-started/ -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	</body>
 </html>

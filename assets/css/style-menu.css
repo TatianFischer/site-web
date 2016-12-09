@@ -13,80 +13,58 @@ html{
     font-size: 62.5%;
 }
 
+.r-m{
+    margin:0 !important;
+}
+
+.r-p{
+    padding: 0 !important;
+}
+
 body{
 	font-family: 'ambleregular', Arial, serif;
-    background: url(images/fondSite.jpg) repeat center fixed;
+    background: url(../images/fondSite.jpg) repeat center fixed;
 	background-size: cover; /* Version standardisée */
 }
 
-#wrap_page{
-	width: 100%;
-    max-width: 96rem;
-    height: auto;
-    
+.container{    
     margin: 40px auto;
     border-radius: 15px;
     box-shadow: 0px 0px 20px black;
     background-color: #36204e;
 }
 
-header{
-	width: calc(100% - 36px);
-	height: auto;
-    box-sizing: border-box;
-    float: left;
-    
-    margin: 40px 15px;
-    margin: 4rem 1.5rem;
+.navbar{
+    margin: 40px 0;
+    margin: 4rem 0;
     border: 3px solid white;
-	border-radius: 5px;
+    border-radius: 0;
     background-color: white;
     text-align: center;
     line-height: 35px;
-    line-height: 3.5rem;
-}
-
-@media all and (max-width: 700px)
-{
-	nav{
-		font-size: 0.8em;
-	}
+    line-height: 3.5rem;    
+    background-color: white;
 }
 
 
-#titre{
-	width: 20%;
-    min-width: 100px;
-    min-width: 10rem;
-    height: auto;
-    box-sizing: border-box;
-    padding: 0 0.7rem;
-    float: left;
+.navbar-brand{
+    width: 200px;
     
-    background-color: #bec2ef;
-    border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    background-color: #54c0eb;
 	font-weight: bold;
     font-size: 20px;
     font-size:2rem;
 }
 
-nav{
-    width: 80%;
-    height: auto;
-    float: left;
-    
-    border-bottom-right-radius: 5px;
-    border-top-right-radius: 5px;
-    background-color: #36204e;
-}
+
 
 nav ul{
-    width: 100%;
-    height: auto;
-    float: left;
-	padding: 0;
-    margin: 0;
+    width: calc(100% - 200px);
+    background-color: #36204e;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
 }
 
 nav	ul li{
@@ -102,75 +80,57 @@ nav	ul li{
     font-size: 1.8rem;
 }
 
-nav a
-{
+nav ul li.active{
+    font-weight: bold;
+}
+
+nav a{
 	color: white;
 	text-decoration: none; /* retire le soulignemement */
 }
 
-nav a:hover
-{
+nav a:hover{
 	font-size: 1.1em;
     text-decoration: underline;
-}
-
-@media all and (max-width: 900px)
-{
-    #titre, nav ul li{
-        min-width: 50px;
-        min-width: 5rem;
-    }
-    
-    nav ul li{
-        width:calc(100% / 2);
-    }
-}
-
-@media all and (max-width: 600px)
-{
-    #titre, nav ul li{
-        font-size:1.5rem;
-    }
+    color: #54c0eb;
 }
 
 /*------------------
-    FIN DU HEADER
+    FIN DE LA NAVBAR
 -------------------*/
 /*------------------
         FOOTER
 -------------------*/
 footer{
-    width: 100%;
-    height: auto;
-    clear: both;
+    
 }
 
-footer.bleu h1{
-    width: 50%;
-    float: left;
-    background-color: #bec2ef;
+footer.bleu{
+    height: auto;
+    background-color: #54c0eb;
+}
+
+footer.bleu h1{    
     margin: 0;
-    padding-left: 10%;
     box-sizing: border-box;
-    line-height: 4rem;
+    font-size: 22px;
+    text-align: center;
+    line-height: 60px;
+    line-height: 6rem;
 }
 
 ul#liens{
-    width: 50%;
     height: auto;
-    background-color: #bec2ef;
     margin:0;
-    padding:0;
-    float: left;
+    padding: 10px 0;
+    text-align: center;
 }
 
 ul#liens li{
-    width:40px;
+    width: 40px;
     height: 40px;
     display: inline-block;
     padding: 0;
-    margin: 0;
-    margin-right: 22%;
     text-align: center;
     line-height: 4rem;
     background-color: black;
@@ -185,22 +145,78 @@ ul#liens li i{
     color: white;
 }
 
-#copyright
-{
+#copyright{
 	width: 100%;
     margin: 0;
-    padding: 0.5rem 0;
+    padding: 1rem 0;
     font-size: 14px;
     font-size: 1.4rem;
     text-align: center;
 	color: gray;
 }
 
-@media all and (max-width: 600px)
-{
-	#copyright
-	{
-		font-size: 1rem;
-		padding: 1em;
-	}
-}
+
+
+/*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .container{
+            margin: 0;
+            border-radius: 0;
+        }
+        
+        .navbar-header{
+            background-color: #36204e;
+        }
+        
+        .navbar-brand{
+            font-size: 16px;
+        }
+        
+        button.navbar-toggle{
+            background-color: #54c0eb;
+        }
+        
+        button.navbar-toggle span{
+           background-color: #36204e;
+        }
+        
+        nav ul{
+            width:100%;
+            border-radius: 0;
+        }
+        
+        nav	ul li{
+            width: 100%;
+        }
+        
+        footer.bleu h1 {
+            line-height: 40px
+        }
+        
+        footer.bleu #liens li{
+            margin-bottom: 10px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

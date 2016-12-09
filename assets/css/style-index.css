@@ -1,53 +1,69 @@
-/* Contenu de la page */
-nav ul li:nth-child(1)
-{
-	font-weight: bold;
-}
-
-#page{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
-
+main{
 	margin: 0;
 	padding: 0;
 }
 
-@media all and (max-width: 480px)
-{
-	#page
-	{
-		font-size: 0.6em;
-		min-height: 450px;
-	}
-}
 
-@media all and (max-width: 700px) and (min-width: 480px)
-{
-	#page
-	{
-		min-height: 650px;
-		font-size: 0.8em;
-	}
-}
-
-
-#conteneur
-{
+#conteneur{
+    width : 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
 	text-align: center;
 	color: #bec2ef;
     margin: 40px 0;
 }
 
-#bouton
-{
-	border: 2px #a2a3aa solid;
-	border-radius: 5px;
-	height: 35px;
-	width: 33px;
-	background-color: #bec2ef;
-	margin: auto;
+#conteneur h1{
+    color:#54C0EB;
 }
+
+#conteneur p{
+    font-size: 1.6rem;
+    color: white;
+}
+
+#conteneur a{
+    color: #54c0eb;
+    text-decoration: none;
+}
+
+#bouton{
+	width: 40%;
+    min-width: 40px;
+    height: auto;
+    height: auto;
+    margin: 20px auto;
+}
+
+#bouton img {
+    max-width: 100px;
+    width: 100%;
+}
+
+/*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+    
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
