@@ -31,7 +31,7 @@
 	<body>
 		<div class="container r-p">
 <!-- Barre de navigation -->	
-            <nav class="navbar">
+            <nav class="navbar" role="navigation">
                 <div class="container-fluid r-p">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -53,17 +53,25 @@
             </nav>
 <!-- Fin de la barre de navigation-->
 
-			<section>
-			<div>
-			<p>Compétences en construction</p>
-			<img src="images/portfolio.jpg" alt="portfolio"></div>
-			</section>
+			<div class="row r-m">
+			    <main class="col-xs-12">
+                    <h1>Porfolio</h1>
+			        <!--<div class="col-md-4 col-sm-6">
+			            <a href="porfolio/02-CSS/index.html" target="_blank">
+			                <img src="assets/images/site-docteur-who.png" alt="Site Doctor Who">
+			            </a>
+			            <p>
+			                Site développé en HTML5 et CSS3.
+			            </p>
+			        </div>-->
+			    </main>
+			</div>
 			
 <!-- FOOTERs -->			
-			<footer class="bleu row r-m">
-                <h1 class="col-sm-6"> Plus d'informations sur : </h1>
+			<footer class="bleu row r-m" role="link">
+                <h3 class="col-sm-6"> Plus d'informations sur :</h3>
                 <ul class="col-sm-6" id="liens">
-                    <li class="col-xs-1 col-xs-offset-2">
+                    <li class="col-xs-1 col-sm-offset-2">
                         <a href="http://www.viadeo.com/fr/profile/tatiana.fischer1" target="_blank"><i class="fa fa-viadeo"></i></a>
                     </li>
                     <li class="col-xs-1 col-xs-offset-3">
@@ -88,5 +96,8 @@
    
         <!-- Latest compiled and minified JavaScript. http://getbootstrap.com/getting-started/ -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!-- Mon fichier JavaScript -->
+        <script src="assets/js/script.js"></script>
 	</body>
 </html>

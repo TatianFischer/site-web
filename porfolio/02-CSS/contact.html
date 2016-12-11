@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="" content="">
+	<title>Contact</title>
+	<!--Pour Internet Explorer : s'assurer qu'il utilise la dernière version du moteur de rendu-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+	<div id="page">
+		<!-- Bandeau de la page -->
+		<div class="BandeauDuHaut">
+			<img src="img/bandeau_moyen.png" alt="Logo de la série Doctor Who">
+		</div>
+		<!-- Menu de navigation -->
+		<div class="menu">
+			<ul>
+				<li>
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="presentation.html">Présentation</a>
+				</li>
+				<li class="current">
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<div id="formulaire">
+			<form name="contact" action="contact.php" method="POST">
+				<fieldset>
+					<legend>Formulaire de contact</legend>
+					<label for="contact-name">Nom :</label>
+					<label for="contact-prenom">Prénom :</label>
+					<input type="text" name="nom" placeholder="Nom">
+					<input type="text" name="prenom" placeholder="Prenom">
+					<label for="contact-email">Email :</label>
+					<input type="email" name="email" placeholder="Email">
+					<label for="sujet">Sujet du message :</label>
+					<select name="sujet" id="sujet">
+						<option value="qq">Coucou</option>
+						<option value="ndoc">Le prochain docteur</option>
+						<option value="pb">Problème(s) sur le site</option>
+						<option value="autre">Autre</option>
+					</select>
+					<label>Votre message :</label>
+					<textarea placeholder="Votre commentaire"></textarea>
+					<input type="submit" value="Envoyer" id="soumission">
+				</fieldset>
+			</form>
+		</div>
+
+		<!-- Créaction du pied de page -->
+		<footer id="footer">
+			<!-- Insertion d'une carte Google maps vers le Doctor Who Expérience-->
+			<div class="gmap">
+				<h2>Notre bureau sur Terre :</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19885.502994577662!2d-3.1799750211006876!3d51.46388689994161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf263d8cb50bc236a!2sDoctor+Who+Experience!5e0!3m2!1sfr!2sfr!4v1478619579964" allowfullscreen></iframe>
+			</div>
+			<!-- Formulaire d'inscription à la newsletter-->
+			<div class="newsletter">
+				<h2>Inscrivez-vous à la newsletter :</h2>
+				<form name="newsletter" action="newsletter.php" method="POST">
+					<fieldset> <!-- Crée un cadre autour du formulaire -->
+						<legend>Newsletter</legend>
+						<label for="newsletter_nom">Nom :</label>
+						<input type="text" name="nom" id="newsletter_nom" placeholder="Nom: Davros">
+						<label for="newsletter_prenom">Prénom :</label>
+						<input type="text" name="prenom" placeholder="Prenom: Skaro" id="newsletter_prenom">
+						<label for="newsletter_email">Email :</label>
+						<input type="email" name="email" placeholder="davros@daleck.sk" id="newsletter_email">
+						<input type="submit" value="M'inscrire !" id="soumission">
+					</fieldset>
+				</form>
+			</div>
+			<!--Adresse de contact-->
+			<div class="contact">
+				<h2>Pour nous contacter :</h2>
+				<address>
+					<strong>Ian Chesterton</strong><br>
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<a href="mailto:ian.chesterton@tardis.univers" title="Adresse Email">ian.chesterton@tardis.univers</a>
+					<br>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<a href="tel:+44 20 8433 3162" title="Téléphone">+44 20 8433 3162</a>
+					<br>
+					Quelque part dans le temps et l'espace.<br>
+					T.A.R.D.I.S.
+				</address>
+			</div>
+		</footer> <!-- Fin du pied de page -->
+	</div> <!--Fin de page-->
+    <p id="copyright">@Tatiana Fischer 2016</p>
+</body>
+</html>

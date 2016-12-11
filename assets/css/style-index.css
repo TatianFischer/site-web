@@ -15,9 +15,12 @@ main{
 
 #conteneur h1{
     color:#54C0EB;
+    font-size: 28px;
+    font-size: 2.8rem;
 }
 
 #conteneur p{
+    font-size: 16px;
     font-size: 1.6rem;
     color: white;
 }

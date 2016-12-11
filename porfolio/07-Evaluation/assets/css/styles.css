@@ -1,0 +1,274 @@
+html{
+    font-size: 62.5%; /*1rem = 10 px*/
+}
+
+body{
+    background-image: url(../img/background.png);
+    font-family: Arial, sans-serif;
+    color:#333;
+    font-size: 1.4rem;
+}
+
+.clear{
+    clear: both;
+}
+/*------------------------------------
+            MENU
+--------------------------------------*/
+.menu{
+    width:100%;
+    height: 6rem;
+    background-color: #C55394;
+}
+
+.menu > p /*Cible le paragraphe du menu et seulement lui*/{
+    width: 20%; /*Je n'ai pas mis 25% à cause du padding left*/
+    height: auto;
+    float: left;
+    margin: 0;
+    padding-left: 3rem;
+    
+    font-size: 2.6rem;
+    font-family: 'Courgette', cursive;
+    line-height: 6rem;
+    color: white;
+}
+
+.menu nav{
+    width: 75%;
+    height: auto;
+    float: right;
+}
+
+.menu ul{
+    text-align: right;
+    margin: 0;
+}
+
+.menu ul li{
+    display: inline-block;
+    margin: 0;
+    line-height: 5.9rem;
+}
+
+.menu ul li a{
+    padding: 0 1.5rem;
+    color: white;
+    font-size: 1.4rem;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.menu ul li:hover{
+    background-color: #EB43A3;
+}
+
+/*------------------------------------
+            HEADER
+--------------------------------------*/
+header{
+    width: 70rem;
+    height: 16rem;
+    margin: 0 auto;
+    margin-top: 3rem;
+    position: relative;
+    
+    background-image: url(../img/rainbow.png); /*Image purement décorative sans intérêt réel*/
+    background-size: cover;
+}
+
+header > h1{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top:55%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    
+    font-family: 'Courgette', cursive;
+    text-align: center;
+    color: #C55394;
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+/*------------------------------------
+            CONTENU
+--------------------------------------*/
+#page{
+    width: 115rem;
+    height: auto;
+    margin: 0 auto;
+}
+
+main{
+    width: 115rem;
+    height: auto;
+    margin: 0;
+    margin-bottom: 5rem; /*Marge avec le footer*/
+    padding-bottom: 4rem;
+    float: left;
+    
+    border-radius: 15px;
+    box-shadow: 0 0 10px #333;
+    background-color: #FFF;
+}
+
+main section{
+    width: 100%;
+    height: auto;
+    padding: 0 2rem;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+main section h2{
+    padding-top: 6rem;
+    
+    font-family: 'Courgette', cursive;
+    font-size: 2.4rem;
+    font-weight: normal;
+    color: #EB43A3;
+} 
+
+/*------------------------------------
+            CONTENU : le principe
+--------------------------------------*/
+#LePrincipe{
+    width: 100%;
+    height: auto;
+}
+
+#LePrincipe p{ /* Par défaut 100% de largeur et hauteur auto*/
+    color:#333;
+    font-size: 1.4rem;
+}
+
+/*------------------------------------
+            CONTENU : Nos licornes
+--------------------------------------*/
+#NosLicornes{
+    width: 100%;
+    height: auto;
+}
+
+#NosLicornes article{
+    width: calc(100% / 4);
+    height: auto;
+    float: left;
+    padding: 0 0.5rem;
+    margin: 1.5rem 0;
+    box-sizing: border-box;
+}
+
+#NosLicornes figure{
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    position: relative;
+}
+
+#NosLicornes figure img{
+    width: 100%;
+    height: auto;
+}
+
+#NosLicornes figure:hover{
+    cursor: pointer;
+    transform: scale(1.5);
+    z-index: 1; /* Pour que l'immage passe au dessus des autres */
+}
+
+#NosLicornes figure figcaption{
+    width:100%;
+    line-height: 4rem;
+    position: absolute;
+    bottom:0;
+    background-color:#333;
+    color: #fff;
+    text-align: center;
+    font-size:1.4rem;
+}
+
+/*------------------------------------
+            CONTENU : Nous trouver
+--------------------------------------*/
+#NousTrouver{
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+#NousTrouver h3{
+    color: #eb43a3;
+    font-weight: bold;
+    font-family: 'Courgette', cursive;
+    font-size: 1.6rem;
+}
+
+article.gmap{
+    width: 60%;
+    height: auto;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 10px;
+    margin-bottom: 30px;
+}
+
+article.adresse{
+    width:40%;
+    float: left;
+    padding-left:1rem;
+    box-sizing: border-box;
+}
+
+article.adresse address{
+    font-style: normal;
+}
+
+article.adresse a{
+    text-decoration: none;
+    color: #333;
+}
+
+article.newsletter{
+    width:40%;
+    float: left;
+    padding-left:1rem;
+    box-sizing: border-box;
+}
+
+article.newsletter form input[type="email"]{
+    display: block;
+    height: 2.5rem;
+    padding-left: 1rem;
+}
+
+article.newsletter form input[type="submit"]{
+    width: 8rem;
+    height: 3rem;
+    display: block;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #c55394;
+    border-radius:5px;
+}
+
+/*------------------------------------
+            FOOTER
+--------------------------------------*/
+footer{
+    width: 100%;
+    height: 4rem;
+    background-color: #E577B5;
+}
+
+footer p{
+    padding-right: 1rem;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    text-align: right;
+    line-height: 4rem;
+    font-size: 1.2rem;
+}

@@ -110,6 +110,16 @@ a{
     margin : 4rem 0;
 }
 
+#contenu h2{
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 0;
+}
+
+#contenu h2:hover{
+    color: #54c0eb;
+}
+
 .rubrique{
     padding: 0 2rem;
     box-sizing: border-box;
@@ -120,33 +130,35 @@ a{
 }
 
 
-.rubrique h2{
+.rubrique h3{
 	padding-top:3rem;
 	color: white;
 	font-size: 24px; 
 	font-size: 2.4rem;
 	font-weight: normal;
-	line-height: 1rem;
 }
-.rubrique h2:first-child{
+.rubrique h3:first-child{
 	margin-top:0;
 }
 
-.rubrique h3{
+.rubrique h4{
 	color: white;
 	font-size: 18px;
 	font-size: 1.8rem;
-	line-height: 1rem;
+    font-weight: bold;
     margin:0;
-    margin-top: 3.5rem;
-    margin-bottom: 0.5rem;
+    margin-top: 20px;
 }
 
 .rubrique p{
-    margin:0;
 	color: white;
 	font-size: 18px;
 	font-size: 1.8rem;
+    margin-top:0;
+}
+
+.rubrique h4+p{
+    margin-top: 20px;
 }
 
 .rubrique a
@@ -169,7 +181,16 @@ a{
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
-    
+        .rubrique{
+            padding:0;
+        }
+        .rubrique h4+p{
+            margin-top: 0;
+        }
+        
+        #competence > div{
+            height: auto;
+        }
     }
 
     /* Extra Small Devices, Phones */ 

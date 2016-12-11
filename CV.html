@@ -31,7 +31,7 @@
 	<body>
 		<div class="container r-p">
 <!-- Barre de navigation -->	
-            <nav class="navbar">
+            <nav class="navbar" role="navigation">
                 <div class="container-fluid r-p">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -59,7 +59,7 @@
 				    
 <!-- COMPETENCES -->
 				    <section id="competence" class="row r-m">
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<h2>Langages</h2>
 							<ul>
 								<li>HTML5 & CSS3</li>
@@ -72,7 +72,16 @@
 								<li class="barre" data-length="40"></li>
 							</ul>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-3">
+						    <h2>CMS & Frameworks</h2>
+						    <ul>
+						        <li>Bootstrap</li>
+						        <li class="barre" data-length="70"></li>
+						        <li>Angular2</li>
+						        <li class="barre" data-length="40"></li>
+						    </ul>
+						</div>
+						<div class="col-md-3">
 							<h2>Outils & Burautique</h2>
 							<ul>
 								<li>Linus/GNU</li>
@@ -85,7 +94,7 @@
 								<li class="barre" data-length="80"></li>
 							</ul>
 						</div>
-						<div class="col-md-4">
+						<div class="col-md-3">
 							<h2>Anglais</h2>
 							<ul>
 								<li>Bonne communication et compréhension écrite.</li>
@@ -102,81 +111,85 @@
 
 <!-- CONTENU -->				    
 					<section id="contenu" class="row">
-                        <ul class="nav nav-tabs nav-justified">
-                            <li class="active">
-                                <a href="#formCont" data-toggle="tab">Formation continue</a>
+                        <ul class="nav nav-tabs nav-justified" role="tablist">
+                            <li class="active" role="tab" id="formContinueTab">
+                                <a href="#formContinue" data-toggle="tab"><h2>Formation continue</h2></a>
                             </li>
-                            <li>
-                                <a href="#experience" data-toggle="tab">Mes expériences</a>
+                            <li role="tab" id="experienceTab">
+                                <a href="#experience" data-toggle="tab"><h2>Mes expériences</h2></a>
                             </li>
-                            <li>
-                                <a href="#formInitiale" data-toggle="tab">Formation initiale</a>
+                            <li role="tab" id="formInitialeTab">
+                                <a href="#formInitiale" data-toggle="tab"><h2>Formation initiale</h2></a>
                             </li>
                         </ul>
                         
                         <div class="tab-content">					        
-		                    <aside id="formCont" class="rubrique tab-pane fade in active">
-                                <h2>Formation développeur-intégrateur web</h2>
+		                    <aside id="formContinue" class="rubrique tab-pane fade in active" role="tab-pane" aria-labelledby="formContinueTab">
+                                <h3 class="col-xs-12">Formation développeur-intégrateur web</h3>
 
-                                <h3>Novembre 2016 - Février 2017 :</h3>
-                                <p>CNCP 1447: Techniques de développement Web.<br/> CNCP 1448 : Techniques d'intégration Web.</p>
-                                <p>HTML5, CSS3, Responsive design, Wordpress, Javascript, Jquery, AJAX, AngularJS, PHP, Architecture MVC, MySQL et Git.</p>
+                                <h4 class="col-sm-3">Nov. 2016 - Fév. 2017 :</h4>
+                                <p class="col-sm-9">CNCP 1447: Techniques de développement Web.<br/> CNCP 1448 : Techniques d'intégration Web. <br> HTML5, CSS3, Responsive design, Wordpress, Javascript, Jquery, AJAX, AngularJS, PHP, Architecture MVC, MySQL et Git.</p>
 
-                                <h2>Certifications OpenClassrooms en développement web</h2>
+                                <h3 class="col-xs-12">Certifications OpenClassrooms en développement web</h3>
 
-                                <h3>Octobre 2016 :</h3>
-                                <p><a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vWnlZcGV0YUVlNHM">Gérer votre code avec Git et GitHub</a></p>
+                                <h4 class="col-sm-3">Octobre 2016 :</h4>
+                                <p class="col-sm-9"><a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vWnlZcGV0YUVlNHM">Gérer votre code avec Git et GitHub</a></p>
 
-                                <h3>Août-Septembre 2016 :</h3>
-                                <p><a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vVTRmUWpuU1Y2VUk">Apprenez à coder avec Javascript.</a><br>
-                                Bases et développement procédural et orienté objet.</p>
-                                <p><a href="https://drive.google.com/file/d/0Bw1cxuq_IW5vdEJiWVdiSzVKOVE/view?usp=sharing">Créer des pages interactives avec Javascript.</a><br>
-                                Utilisation du DOM ; Interaction avec les utilisateurs/avec un serveur (APIs web, format JSON).
+                                <h4 class="col-sm-3">Août-Sept. 2016 :</h4>
+                                <p class="col-sm-9"><a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vVTRmUWpuU1Y2VUk">
+                                    Apprenez à coder avec Javascript.</a><br>Bases et développement procédural et orienté objet.<br>
+                                    <a href="https://drive.google.com/file/d/0Bw1cxuq_IW5vdEJiWVdiSzVKOVE/view?usp=sharing">Créer des pages interactives avec Javascript.</a><br>
+                                    Utilisation du DOM ; Interaction avec les utilisateurs/avec un serveur (APIs web, format JSON).
                                 </p>
 
-                                <h3>Août 2016 :</h3>
-                                <p><a href="https://drive.google.com/file/d/0Bw1cxuq_IW5vQkhnX1AzUFZNOWs/view?usp=sharing">Apprenez à créer votre site web avec HTML5 et CSS3.</a><br>
-                                Structurer une page web ; Transformaer une maquette en page web ; Mise en ligne du site.<br>
-                                Effets avancés CSS6 ; dégradé, animation et transformation 2D et 3D.
+                                <h4 class="col-sm-3">Août 2016 :</h4>
+                                <p class="col-sm-9">
+                                    <a href="https://drive.google.com/file/d/0Bw1cxuq_IW5vQkhnX1AzUFZNOWs/view?usp=sharing">Apprenez à créer votre site web avec HTML5 et CSS3.</a><br>Structurer une page web ; Transformer une maquette en page web ; Mise en ligne du site.<br>
+                                    Effets avancés CSS6 ; dégradé, animation et transformation 2D et 3D.
                                 </p>
 
-                                <h3>Juillet 2016 :</h3>
-                                <p><a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vMWo1N0NCamtjaFU">Comprendre le web.</a><br>
-                                Organisation du web ; Utilité des différents langages et des frameworks.
+                                <h4 class="col-sm-3">Juillet 2016 :</h4>
+                                <p class="col-sm-9">
+                                    <a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vMWo1N0NCamtjaFU">Comprendre le web.</a><br>Organisation du web ; Utilité des différents langages et des frameworks.
                                 </p>
 
-                                <h2>Autres</h2>
+                                <h3 class="col-xs-12">Autres</h3>
 
-                                <h3>Juin-Août 2016 :</h3>
-                                <p>ABC du langage C (<a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vWVFEV3FBb2VMNFE">Attestaion de suivi</a>) puis Apprendre à programmer en C ! (<a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vMjNZek5VOW5KOE0">Certification OpenClasssrooms</a>).</p>
+                                <h4 class="col-sm-3">Juin-Août 2016 :</h4>
+                                <p class="col-sm-9">
+                                    ABC du langage C (<a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vWVFEV3FBb2VMNFE">Attestaion de suivi</a>) puis Apprendre à programmer en C ! (<a href="https://drive.google.com/open?id=0Bw1cxuq_IW5vMjNZek5VOW5KOE0">Certification OpenClasssrooms</a>).
+                                </p>
 
-                                <h3>Juillet 2016 :</h3>
-                                <p>Plateforme Microsoft Virtual Academy :<br> Apprendre à coder pour les vrais débutants <br>Les fondamentaux du développent en C# - Chapitre 1 et 2.</p>
+                                <h4 class="col-sm-3">Juillet 2016 :</h4>
+                                <p class="col-sm-9">
+                                    Plateforme Microsoft Virtual Academy :<br> Apprendre à coder pour les vrais débutants <br>Les fondamentaux du développent en C# - Chapitre 1 et 2.
+                                </p>
 		                    </aside><!-- FIN DE L'ONGLE 1 -->
                          
                            
                           
-                            <aside id="experience" class="rubrique tab-pane fade">
-                               <h3>Septembre 2014 à Octobre 2015 :</h3>
-                               <p>Professeur de Physique Chimie en lycée.<p>
-                               <h3>Janvier 2012  à  Juin 2012 :</h3>
-                               <p>Stage de Master 2ème année et de Magistère 3ème année à l'Institut des Sciences Moléculaires d'Orsay. Calculs de chimie théorique (avec le logiciel ADF).</p>
-                               <h3>Avril 2011 à  Juillet 2011 :</h3>
-                               <p>Stage de Magistère 2ème année à l'école Polytechnique, Palaiseau. Calculs de chimie théorique (avec le logiciel Gaussian).</p>
-                               <h3>Juin 2010 à juillet 2010 :</h3>
-                               <p>Stage 3ème année de Licence et 1ère année de Magistère à l'ICMMO à Orsay. Photochimie et synthèse organique.</p>
+                            <aside id="experience" class="rubrique tab-pane fade" role="tab-pane" aria-labelledby="experienceTab">
+                                <h4 class="col-sm-3">Sept. 2014 - Oct. 2015 :</h4>
+                                <p class="col-sm-9">Professeur de Physique Chimie en lycée.</p>
+                                
+                                <h4 class="col-sm-3">Janv. 2012 - Juin 2012 :</h4>
+                                <p class="col-sm-9">Stage de Master 2ème année et de Magistère 3ème année à l'Institut des Sciences Moléculaires d'Orsay. Calculs de chimie théorique (avec le logiciel ADF).</p>
+                                <h4 class="col-sm-3">Avril 2011 - Juil. 2011 :</h4>
+                                <p class="col-sm-9">Stage de Magistère 2ème année à l'école Polytechnique, Palaiseau. Calculs de chimie théorique (avec le logiciel Gaussian).</p>
+                                <h4 class="col-sm-3">Juin 2010 - Juil. 2010 :</h4>
+                                <p class="col-sm-9">Stage 3ème année de Licence et 1ère année de Magistère à l'ICMMO à Orsay. Photochimie et synthèse organique.</p>
                             </aside><!-- FIN DE L'ONGLE 2 -->
 
-                            <aside id="formInitiale" class="rubrique tab-pane fade">
-                                <h3>Septembre 2012 à Juin 2014 :</h3>
-                                <p>Préparation de l'Agrégation de chimie. Centre de l'ENS ULM à Montrouge puis à l'Université Lille 1.
-                                Admissibilité.</p>
-                                <h3>Septembre 2009 à Juin 2012 :</h3>
-                                <p>Magistère de Physicochimie Moléculaire. Université Paris-Sud à Orsay. Mention bien.</p>
-                                <h3>Septembre 2011 à Juin 2012 :</h3>
-                                <p>Master de Chimie et Physicochimie des matériaux. Dans le cadre de la 3ème année de Magistère. Mention assez bien.</p>
-                                <h3>Septembre 2009 - Juillet 2010 :</h3>
-                                <p>Licence de Chimie. Mention Bien.</p>
+                            <aside id="formInitiale" class="rubrique tab-pane fade" role="tab-pane" aria-labelledby="formInitialeTab">
+                                <h4 class="col-sm-3">Sept. 2012 - Juin 2014 :</h4>
+                                <p class="col-sm-9">Préparation de l'Agrégation de chimie. Centre de l'ENS ULM à Montrouge puis à l'Université Lille 1.
+                                Admissibilité au concours.</p>
+                                <h4 class="col-sm-3">Sept. 2009 - Juin 2012 :</h4>
+                                <p class="col-sm-9">Magistère de Physicochimie Moléculaire. Université Paris-Sud à Orsay. Mention bien.</p>
+                                <h4 class="col-sm-3">Sept. 2011 - Juin 2012 :</h4>
+                                <p class="col-sm-9">Master de Chimie et Physicochimie des matériaux. Dans le cadre de la 3ème année de Magistère. Mention assez bien.</p>
+                                <h4 class="col-sm-3">Sept. 2009 - Juil. 2010 :</h4>
+                                <p class="col-sm-9">Licence de Chimie. Mention Bien.</p>
                             </aside><!-- FIN DE L'ONGLE 3 -->
                         </div> <!-- Fin du tab-content-->
 					</section>
@@ -185,10 +198,10 @@
 			</div> <!-- Fin du corps de la page -->
 
 <!-- FOOTERs -->			
-			<footer class="bleu row r-m">
-                <h1 class="col-sm-6"> Plus d'informations sur : </h1>
+			<footer class="bleu row r-m" role="link">
+                <h3 class="col-sm-6"> Plus d'informations sur :</h3>
                 <ul class="col-sm-6" id="liens">
-                    <li class="col-xs-1 col-xs-offset-2">
+                    <li class="col-xs-1 col-sm-offset-2">
                         <a href="http://www.viadeo.com/fr/profile/tatiana.fischer1" target="_blank"><i class="fa fa-viadeo"></i></a>
                     </li>
                     <li class="col-xs-1 col-xs-offset-3">

@@ -30,7 +30,7 @@
 	<body>
 		<div class="container r-p">
 <!-- Barre de navigation -->	
-            <nav class="navbar">
+            <nav class="navbar" role="navigation">
                 <div class="container-fluid r-p">
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
@@ -51,25 +51,29 @@
                 </div>
             </nav>
 <!-- Fin de la barre de navigation-->
-
-			<section id="page">
-				<h1>Contact</h1>
-				<aside id="conteneur">
-					<p>Mon profil vous intéresse.</p>
-					<p>Contactez moi par mail :<br> <a href="mailto:tatiana.fischer@hotmail.fr">tatiana.fischer@hotmail.fr</a>
-					</p>
-				</aside>
-				<aside id="mobilite">
-					<img src="images/P_Eiffel.png" alt="dessin de la Tour Eiffel sur un fond rond gris"/>
-					<p>Mobile sur Paris et sa région.</p>
-				</aside>
-			</section>
+            
+            <div class="row r-m">   
+                <main id="page" class="col-xs-12">
+                    <div class="col-sm-offset-1 col-sm-4">
+                        <h1>Contact</h1>
+                        <aside id="conteneur">
+                            <p>Mon profil vous intéresse ?</p>
+                            <p>Contactez moi par mail :<br> <a href="mailto:tatiana.fischer@hotmail.fr">tatiana.fischer@hotmail.fr</a>
+                            </p>
+                        </aside>
+                    </div> 
+                    <aside class="col-sm-4 col-sm-offset-1" id="mobilite">
+                        <img src="assets/images/P_Eiffel.png" alt="dessin de la Tour Eiffel sur un fond rond gris"/>
+                        <p>Mobile sur Paris et sa région.</p>
+                    </aside>
+                </main>
+            </div><!-- Fin du main -->
 
 <!-- FOOTERs -->			
-			<footer class="bleu row r-m">
-                <h1 class="col-sm-6"> Plus d'informations sur : </h1>
+			<footer class="bleu row r-m" role="link">
+                <h3 class="col-sm-6"> Plus d'informations sur :</h3>
                 <ul class="col-sm-6" id="liens">
-                    <li class="col-xs-1 col-xs-offset-2">
+                    <li class="col-xs-1 col-sm-offset-2">
                         <a href="http://www.viadeo.com/fr/profile/tatiana.fischer1" target="_blank"><i class="fa fa-viadeo"></i></a>
                     </li>
                     <li class="col-xs-1 col-xs-offset-3">

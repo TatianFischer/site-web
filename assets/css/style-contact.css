@@ -1,19 +1,7 @@
-#page
-{
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center;
-
-	margin: 0;
-	padding: 0;
+#page{
 }
 
-#page>*
-{
-	margin: 0.5em 0em;
+#page>*{
     font-size:20px;
     font-size: 2rem;
     color: white;
@@ -25,14 +13,12 @@
     text-align: center;
     font-size: 30px;
     font-size: 3rem;
+    margin-bottom: 20px;
 }
 
-#conteneur
-{
+#conteneur{
 	text-align: center;
-	min-width: 200px;
-	width: 30%;
-	border: 3px solid #1d88a9;
+	border: 3px solid #54c0eb;
 	border-radius: 1em;
 }
 
@@ -43,23 +29,41 @@ aside
 
 #conteneur a
 {
-	color: #1d88a9;
+	color: #54c0eb;
 	margin:1rem;
 }
 
 #mobilite img{
-    width:250px;
+    max-width:250px;
 }
 
-@media all and (max-width: 700px)
-{
-	#page
-	{
-		font-size:0.8em;
-	}
 
-	img
-	{
-		width: 50%;
-	}
-}
+/*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        #conteneur, #mobilite{
+            font-size: 16px;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

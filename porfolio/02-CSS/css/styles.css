@@ -1,0 +1,467 @@
+/* -----------------
+Dans ctte feuille de style CSS, je vais pouvoir définir l'apparence que je veux donner aux différents éléments que composent ma page.
+
+### La Synthaxe ###
+
+element {
+	propriete : valeur;
+}
+
+----------------------*/
+
+a, h1, h3 { /*selection de plusieurs élements*/
+	font-family: Arial, sans-serif;
+}
+
+/* ---------------
+
+### Cibler un élément selon sa classe ####
+
+.class{
+	propriete : valeur;
+}
+
+CONSIGNE :
+	1- Tous les liens du menu en noir
+	2- Non soulignés
+	3- Affiché en ligne via la propriété display
+
+---------------------*/
+.menu ul{
+	margin: 10px 0 0 0;
+	padding: 0;
+}
+
+.menu ul li{
+	display: inline-block; /*Contrairement à INLINE, on peut les redimmensionner*/
+	width: 314px;
+	text-align: center; /*Aligner mon texte dans son block*/
+}
+
+.menu a{
+	display: inline-block;
+	padding: 5px 10px;
+	color: white;
+	border:3px solid white;
+	box-shadow: 0px 0px 10px white;
+	border-radius: 20px;
+	text-decoration: none;
+	font-size: 20px;
+	text-transform: uppercase;
+	/*Passage en majuscules,
+	lowercase en minuscule et 
+	capitalize 1ère lettre des mots en majuscule*/
+}
+
+/*-------------------------
+Si je souhaite que mes liens soient soulignés au passage de la souris
+--------------------------*/
+
+a:hover{
+	color: white;
+	font-size: 1.2em;
+}
+
+/*-------------------------
+Je change la couleur de mon lien dans la classe curent
+--------------------------*/
+
+.menu ul li.current a{
+	color: #9DCDFF;
+}
+
+/*--------------------
+#############Cibler un élement d'après son ID ########
+NB: Un ID ne peut être présent qu'une seule et unique fois sur la même page.
+
+#Id {
+	propriete : valeur;
+}
+---------------------*/
+
+#page{
+	/*---Je vais définir la largeur de ma page --*/
+	width: 960px;
+
+	/*-- margin <top/bottom> <left/right>--*/
+	margin: 80px auto 40px auto;
+	background-color: #10253c;
+	color: white;
+}
+
+body{
+	background-color: #313131;
+	background-image: url(../img/wallpaper2_opt.jpg);
+	background-size: cover;
+}
+
+/*-----------------
+CONSIGNE
+	1- Ajouter avec la propriété border-radius un arrondi de 5px a div#page
+	2- puis; grâce à box-shadow, ajouter une ombre légère autour de div#page
+	3- Mon titre h1 sera centré au milieu avec une bordure noir en bas de 1px dashed
+------------------*/
+
+#page{
+	border-radius: 15px;
+	
+	/*--Overflow avec la valeur hidden va supprimer l'affichage de tous les éléments qui dépassent de la div#page--*/
+	overflow: hidden;
+
+	/*--J'applique une marge interne de 5px autour de #page--*/
+	padding: 5px;
+
+	/*box-shadow: horizontal(px) vertical(px) fondu (pixel) couleur*/
+	box-shadow: 0px 0px 15px white;
+	
+}
+
+#contenu h1{
+	text-align: center;
+	font-weight: normal; /*texte pas en gras*/
+	border-bottom: 1px dashed black;
+	color: #9DCDFF;
+}
+
+/*--Style du bandeau du haut--*/
+.BandeauDuHaut{
+	width: 100%;
+	height: 360px;
+}
+
+.BandeauDuHaut img {
+	width: calc(100% - 6px);
+	height: 360px;
+	object-fit: cover;
+	border-radius: 15px;
+	box-shadow: 0px 0px 10px white;
+}
+
+/*----------
+Je souhaite maintenant positionner côte à côte l'illustration et l'article.
+
+CONSIGNE :
+	1- Sachant que la largeur de #mapage est de 960px, attribuer une dimension (width) à illustration et article afin qu'il soit sur colonne : 1 colonne illustration 1 colonne article.
+	2-A l'aide du positionnement float positionner l'illustration et l'article côte à côte.
+	3- le texte de mon article devra être en Arial et justifié.
+
+----------*/
+.illustration{
+	width : calc((100% / 2) - 26px);
+	float: left; /*Va se coller au bord gauche de son parent : #contenu*/
+	margin: 40px 10px;
+	border: 3px solid white;
+	box-shadow: 0px 0px 10px white;
+	border-radius: 15px;
+}
+
+.illustration img{
+	width: 100%;
+	border-radius: 15px;
+}
+
+.article{
+	width : calc((100% / 2) - 46px);
+	float: left; /*Va se coller à l'élément précédent ici .illustration*/
+	font-family: Arial, sans-serif;
+	text-align: justify;
+	margin: 0 10px 10px 10px;
+	border: 3px solid white;
+	box-shadow: 0px 0px 10px white;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+.article h3{
+	font-size: 20px;
+	margin: 0;
+	margin-bottom: 5px;
+	color: #9DCDFF;
+}
+
+
+/*-------------
+Style de mon pied de page
+-------------*/
+footer{
+	width: calc(100% - 6px);
+	height: 250px;
+	float: left;
+	padding-top: 10px;
+	background-color: #003B6F;
+	border: 3px solid black;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 15px;
+}
+
+.gmap, .newsletter, .contact{
+	width: calc((100% / 3) - 16px);
+	height: 95%;
+	float: left;
+	margin: 0 5px;
+	border: 3px solid white;
+	border-radius: 15px;
+	box-shadow: 0px 0px 5px white;
+}
+
+iframe{
+	width: calc(99% - 10px);
+    height: 200px;
+    margin: 0px 5px;
+    border-radius: 15px;
+}
+
+.newsletter fieldset{
+	font-family: Arial, sans-serif;
+	border-radius: 15px;
+	border: 3px solid white;
+	color: #9DCDFF;
+	padding: 0 15px;
+	margin: 5px 10px;
+}
+
+.newsletter legend{
+	color: #9DCDFF;
+	width: 100px;
+	border: 3px solid black;
+	box-shadow: 0px 0px 5px #10253C;
+	border-radius: 15px;
+	margin-bottom:10px;
+	padding-left: 20px;
+}
+
+.newsletter form input[type=email], .newsletter form input[type=text]{
+	width: calc(100% - 30px - 80px);
+	height: 20px;
+    display: inline-block;
+	border:0;
+	border-radius: 10px;
+	margin-bottom: 10px;
+	padding: 5px 15px;
+}
+
+.newsletter form label{
+    width: 70px;
+    display: inline-block;
+}
+
+.newsletter form input[type=submit]{
+	width: 100%;
+	height: 35px;
+	margin: 0px 0px 10px 0px;
+	border: 0;
+	border-radius: 10px;
+	background-color: white;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+footer h2{
+	font-size: 20px;
+	text-align: center;
+	color: white;
+	margin: 0 0 5px 0;
+}
+
+.contact address{
+	color: white;
+	font-style: normal;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+	padding-left: 20px;
+	padding-top: 20px;
+	line-height: 1.8em;
+}
+
+.contact address strong {
+	font-size: 20px;
+}
+
+.contact address a {
+	color: white;
+	text-decoration: none;
+}
+
+.contact address a:hover {
+	text-decoration: underline;
+}
+/*------------------------------
+	Fin : page index
+----------------------------*/
+
+/*----------------------------
+	page :	Présentation
+-----------------------------*/
+#contenu .docteur{
+	width: calc((100% / 2) - 44px);
+    height: 260px;
+	margin: 10px 10px;
+	border: 2px solid white;
+	box-shadow: 0px 0px 10px white;
+	border-radius: 10px;
+	float: left;
+	padding: 10px;
+}
+
+#contenu .docteur h2{
+	font-size: 20px;
+	margin:0;
+	margin-bottom: 5px;
+    color: #9DCDFF;
+    text-align: center;
+}
+
+#contenu .docteur img{   
+    width:140px;
+    height:190px;
+    object-fit: cover;
+    display: block;
+    margin: 15px 10px 15px 0px;
+    float:left;
+    border-radius:10px;
+}
+
+#contenu .docteur p, #contenu .docteur ul{
+	font-size: 18px;
+	margin: 0;
+	padding-left:0px;
+}
+
+#contenu .docteur .mCustomScrollbar{
+    width: calc(100% - 140px - 20px);
+    height: 210px;
+    float:left;
+    overflow-y: auto;
+}
+
+#contenu .docteur .mCSB_scrollTools_vertical{
+    margin: 12px -10px;
+}
+
+#contenu .mCSB_container{
+    padding-right:10px;
+}
+
+#contenu .mCSB_container li{
+    padding-left: 15px;
+}
+
+#contenu .mCSB_container li strong{
+    line-height: 40px;
+    padding-left: 0px;
+}
+
+#contenu .mCSB_container li b{
+    color: #9DCDFF;
+    font-weight: normal;
+}
+/*-----------------------------
+	Fin : page présentation
+----------------------------*/
+
+/*----------------------------
+	page :	Contact
+-----------------------------*/
+
+#formulaire fieldset{
+	width: 70%;
+	margin: 40px auto;
+	border: 3px solid white;
+	border-radius: 15px;
+	font-family: Arial, sans-serif;
+	box-shadow: 0px 0px 10px white;
+}
+
+#formulaire legend{
+	background-color: #10253C;
+	border:3px solid black;
+	box-shadow: 0px 0px 10px black;
+	border-radius: 5px;
+	color: #9DCDFF;
+	width: 215px;
+	margin-bottom:10px;
+	margin-left: 20px;
+	padding: 0 20px;
+	font-size: 22px;
+}
+
+#formulaire label{
+	font-size: 16px;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+#formulaire label:nth-child(-n+4){
+    width: 320px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+#formulaire form option, #formulaire form select, #formulaire form input, #formulaire form textarea{
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    color:black;
+    margin: 10px auto;
+    border:0;
+    border-radius: 15px;
+    box-sizing: border-box;
+}
+
+#formulaire form input[type=text]{
+	width: 320px;
+	height: 30px;
+    display: inline-block;
+	padding: 5px 0px 5px 20px;
+}
+
+#formulaire form input:first-of-type, #formulaire form label:first-of-type{
+    margin-right: 20px;
+}
+
+#formulaire form input[type="email"]{
+    width: 670px;
+	height: 30px;
+    display: inline-block;
+	padding: 5px 0px 5px 20px;
+	margin-bottom: 25px;
+}
+
+#formulaire form select{
+	width: 680px;
+	height: 30px;
+	padding-left: 15px;
+	font-weight: bold;
+    color:#767676;
+}
+
+#formulaire form textarea{
+	width: 680px;
+	height: 100px;
+	margin: 10px auto 20px auto;
+	padding: 10px 20px;
+}
+
+#formulaire form input[type=submit]{
+	width: 100%;
+	height: 35px;
+	font-size: 16px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+disabled::-webkit-placeholder{
+    opacity: 0.8;
+}
+
+disabled::-moz-placeholder, disabled:-ms-placeholder{
+    opacity: 0.8;
+}
+/*-----------------------------
+	Fin : Contact
+----------------------------*/
+#copyright{
+    color: white;
+    text-align: center;
+}

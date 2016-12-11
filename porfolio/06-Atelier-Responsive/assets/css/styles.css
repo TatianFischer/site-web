@@ -1,0 +1,205 @@
+/*===========  Pour les écrans larges =========================*/
+/* Déclaration  de Styles pratiques*/
+html{
+    /*font-size: 62.5%; pas necessaire car déjà mis dans le bootstrap.css*/
+}
+
+.r-m {
+    margin: 0 !important;
+}
+
+.r-p {
+    padding: 0 !important;
+}
+
+.container-full{
+    background: rgba(250, 0, 250, 0.1);
+}
+/*----------------------
+    LE PROJECTEUR
+-----------------------*/
+
+.projecteur{
+    position: relative;
+}
+
+.projecteur .item img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+.projecteur .item .carousel-caption{
+    left:35%;
+    right: 35%;
+    font-size: 1.8rem;
+    line-height: 25px;
+    box-shadow: 0 0 20px black;
+    background: rgba(250, 0, 0, 0.2);
+}
+/*----------------------
+    LE CAROUSEL
+-----------------------*/
+
+/*----------------------
+    LA NAVIGATION
+-----------------------*/
+nav{
+    position: absolute !important;
+    top:0px;
+    left:0px;
+    padding: 40px 0;
+    padding: 4rem 0;
+    box-shadow: 0 0 20px black;
+    box-sizing: border-box;
+    background: rgba(250, 0, 0, 0.2);
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-right: 5rem;
+}
+
+nav ul li:last-child{
+    margin-right: 0;
+}
+
+nav ul li a{
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: white;
+}
+
+nav ul li a:hover, nav ul li.current a{
+    color: rgba(255, 193, 7, 0.7);
+    font-weight: bold;
+}
+
+/*----------------------
+        NOS-VIDEOS
+-----------------------*/
+section{
+    text-align: center;
+}
+
+section.videos{
+    background: url(../img/marche-de-noel-a-mulhouse.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+
+section.videos iframe{
+    height: 50rem;
+    box-shadow: 0 0 20px black;
+}
+
+/*----------------------
+        NOS-PHOTOS
+-----------------------*/
+section.photos{
+    padding: 1.5rem;
+}
+
+section.photos div{
+    margin-bottom: 1rem
+}
+
+section.photos div img{
+    width: 100%;
+    height: 300px;
+    height: 30rem;
+    object-fit: cover;
+    box-shadow: 0 0 10px black;
+}
+
+section.photos h1{
+    margin-bottom: 1rem;
+    font-size: 32px;
+    font-size: 3.2rem;
+}
+
+section.photos p{
+    font-size: 18px;
+    font-size: 1.8rem;
+    padding: 1rem 1.5rem;
+}
+
+/*----------------------
+        FOOTER
+-----------------------*/
+footer{
+    text-align: center;
+    font-weight: bold;
+    color: grey;
+    line-height: 3rem;
+}
+
+/*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        nav ul li a{
+            font-size: 2rem;
+        }
+        
+        section.videos{
+            padding-bottom: 3rem;
+            padding-top: 3rem;
+        }
+        
+        section.videos iframe{
+            height: 30rem;
+        }
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        .projecteur .item .carousel-caption{
+            left:25%;
+            right: 25%;
+            font-size: 1.5rem;
+        }
+        
+        nav{
+            padding: 0.5rem 0;
+        }
+        nav ul li{
+            width: 100%;
+            margin: 0;
+            margin-top: 1rem;
+            padding: 0.5rem 0;
+        }
+        
+        section.videos iframe{
+            width: 100%;
+        }
+        
+        section.videos iframe:first-child{
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+            
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }

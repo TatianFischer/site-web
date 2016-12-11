@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'ambleregular';
-    src: url('Font/Amble-Regular-webfont.eot');
-    src: url('Font/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Font/Amble-Regular-webfont.woff') format('woff'),
-         url('Font/Amble-Regular-webfont.ttf') format('truetype'),
-         url('Font/Amble-Regular-webfont.svg#ambleregular') format('svg');
+    src: url('../../Font/Amble-Regular-webfont.eot');
+    src: url('../../Font/Amble-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../../Font/Amble-Regular-webfont.woff') format('woff'),
+         url('../../Font/Amble-Regular-webfont.ttf') format('truetype'),
+         url('../../Font/Amble-Regular-webfont.svg#ambleregular') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -58,6 +58,9 @@ body{
     font-size:2rem;
 }
 
+.navbar-brand a:hover{
+    color: #36204e;
+}
 
 
 nav ul{
@@ -80,8 +83,9 @@ nav	ul li{
     font-size: 1.8rem;
 }
 
-nav ul li.active{
+nav ul li.active a{
     font-weight: bold;
+    color: #54c0eb;
 }
 
 nav a{
@@ -89,11 +93,12 @@ nav a{
 	text-decoration: none; /* retire le soulignemement */
 }
 
-nav a:hover{
+nav .navbar-nav a:hover{
 	font-size: 1.1em;
     text-decoration: underline;
     color: #54c0eb;
 }
+
 
 /*------------------
     FIN DE LA NAVBAR
@@ -110,7 +115,7 @@ footer.bleu{
     background-color: #54c0eb;
 }
 
-footer.bleu h1{    
+footer.bleu h3{    
     margin: 0;
     box-sizing: border-box;
     font-size: 22px;
@@ -213,7 +218,13 @@ ul#liens li i{
 
     /* Extra Small Devices, Phones */ 
     @media only screen and (max-width : 480px) {
-
+        html{
+            font-size: 55%;
+        }
+        
+        footer.bleu h3{
+            font-size: 18px;
+        }
     }
 
     /* Custom, iPhone Retina */ 

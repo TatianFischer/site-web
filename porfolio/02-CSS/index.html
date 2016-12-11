@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="Site sur doctor Who">
+	<title>Doctor Who</title>
+	<!-- Déclaration de la feuille de style -->
+	<link rel="stylesheet" href="css/styles.css">
+	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+
+<body>
+	<div id="page">
+		<!-- Bandeau de la page -->
+		<div class="BandeauDuHaut">
+			<img src="img/bandeau_moyen.png" alt="Logo de la série Doctor Who">
+		</div>
+		<!-- Menu de navigation -->
+		<div class="menu">
+			<ul>
+				<li class="current">
+					<a href="index.html">Accueil</a>
+				</li>
+				<li>
+					<a href="presentation.html">Présentation</a>
+				</li>
+				<li>
+					<a href="contact.html">Contact</a>
+				</li>
+			</ul>
+		</div>
+
+		<!-- Contenu de la page-->
+		<div id="contenu">
+			<!-- Titre HTML-->
+			<h1>Doctor Who pour les fans et par les fans.</h1>
+			<div class="illustration">
+				<img src="img/russell.jpg" alt="Le Docteur, Susan, Barbara et Ian autour de la console du TARDIS">
+			</div>
+			<!-- Paragraphe de texte-->
+			<div class="article">
+				<h3>Doctor Who ?</h3>
+				<p>
+				Doctor Who (trad. litt. : « Docteur Qui » est une série télévisée britannique de science-fiction créée par Sydney Newman et Donald Wilson et diffusée depuis le <strong>23 novembre 1963</strong> sur BBC One. 
+				</p>
+
+				<h3>La série la plus longue de l'histoire.</h3>
+				<p>
+				Doctor Who est historiquement la plus longue série de science-fiction de tous les temps, comptant 679 épisodes de 26 minutes (dont 255 en noir et blanc), 15 épisodes de 45 minutes, un de 90 minutes et 117 de plus depuis sa re-création de 2005. La série compte 813 épisodes et est encore en cours de production.
+				</p>
+				<p>
+				Après 26 saisons, la BBC décide d'annuler la série. Dans l'espoir de la redémarrer, la chaîne produisit avec la FOX un téléfilm en 1996 qui eut peu de succès, condamnant le projet. En 2003, la BBC annonce qu'une seconde série sera produite par Russell T Davies et Julie Gardner, avec Davies comme scénariste principal. Diffusée depuis 2005, la suite de la première série compte neuf saisons.
+				</p>
+			</div>
+		</div>
+
+		<!-- Créaction du pied de page -->
+		<footer id="footer">
+			<!-- Insertion d'une carte Google maps vers le Doctor Who Expérience-->
+			<div class="gmap">
+				<h2>Notre bureau sur Terre :</h2>
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19885.502994577662!2d-3.1799750211006876!3d51.46388689994161!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xf263d8cb50bc236a!2sDoctor+Who+Experience!5e0!3m2!1sfr!2sfr!4v1478619579964" allowfullscreen></iframe>
+			</div>
+			<!-- Formulaire d'inscription à la newsletter-->
+			<div class="newsletter">
+				<h2>Inscrivez-vous à la newsletter :</h2>
+				<form name="newsletter" action="newsletter.php" method="POST">
+					<fieldset> <!-- Crée un cadre autour du formulaire -->
+						<legend>Newsletter</legend>
+						<label for="newsletter_nom">Nom :</label>
+						<input type="text" name="nom" id="newsletter_nom" placeholder="Nom: Davros">
+						<label for="newsletter_prenom">Prénom :</label>
+						<input type="text" name="prenom" placeholder="Prenom: Skaro" id="newsletter_prenom">
+						<label for="newsletter_email">Email :</label>
+						<input type="email" name="email" placeholder="davros@daleck.sk" id="newsletter_email">
+						<input type="submit" value="M'inscrire !" id="soumission">
+					</fieldset>
+				</form>
+			</div>
+			<!--Adresse de contact-->
+			<div class="contact">
+				<h2>Pour nous contacter :</h2>
+				<address>
+					<strong>Ian Chesterton</strong><br>
+					<i class="fa fa-envelope-o" aria-hidden="true"></i>
+					<a href="mailto:ian.chesterton@tardis.univers" title="Adresse Email">ian.chesterton@tardis.univers</a>
+					<br>
+					<i class="fa fa-phone" aria-hidden="true"></i>
+					<a href="tel:+44 20 8433 3162" title="Téléphone">+44 20 8433 3162</a>
+					<br>
+					Quelque part dans le temps et l'espace.<br>
+					T.A.R.D.I.S.
+				</address>
+			</div>
+		</footer> <!-- Fin du pied de page -->
+	</div> <!-- FIN de page -->
+	<p id="copyright">@Tatiana Fischer 2016</p>
+</body>
+</html>

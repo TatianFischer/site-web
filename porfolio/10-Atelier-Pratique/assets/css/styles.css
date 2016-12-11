@@ -1,0 +1,291 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-color: #000000;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.r-m{
+    margin: 0;
+}
+
+.r-p{
+    padding: 0;
+}
+/*--------------------------------------------
+                NAVIGATION
+---------------------------------------------*/
+.navbar{
+    background-color: #1e1e1e;
+    margin: 0;
+}
+
+.navbar-header button{
+    background-color: #000;
+}
+
+.navbar-header button .icon-bar{
+    background-color: #eee;
+}
+
+#nav_collapsed{
+    margin:0;
+    padding: 0;
+}
+
+.navbar ul{
+    width: calc(100% - 35px);
+}
+
+.navbar ul li{
+    width: calc(100% / 9);
+}
+
+.navbar ul li:first-child{
+    margin-left: 0;
+}
+
+.navbar ul li a{
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    text-align: center;
+}
+
+.navbar ul li a:hover{
+    background-color: #000;
+}
+
+a.navbar-brand{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    text-align: right;
+}
+a.navbar-brand i{
+    font-size: 28px;
+    line-height: 50px;
+}
+
+
+/*--------------------------------------------
+                MENU
+---------------------------------------------*/
+#menu{
+    width: 100%;
+    height: auto;
+    background-color: #141414;
+}
+
+#menu ul{
+    
+}
+
+#menu ul li{
+    display: inline-block;
+    height: 130px;
+    text-align: center;
+}
+
+#menu ul li a{
+    height: 100%;
+    
+}
+
+#menu ul li a img{
+    margin: auto;
+    margin-top: 20px;
+}
+
+/*--------------------------------------------
+                IPHONE7
+---------------------------------------------*/
+#iphone7{
+    
+}
+
+#iphone7 p{
+    color: #ffffff;
+    text-align: center;
+}
+
+#iphone7 p strong{
+    font-weight: normal;
+    font-size: 50px;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#iphone7 p span{
+    font-weight: 100;
+    font-size: 60px;
+}
+
+#iphone7 p a{
+    color: #66bbff;
+}
+
+#hero{
+    
+}
+
+#hero img{
+    width: 100%;
+}
+
+/*--------------------------------------------
+                BLANC
+---------------------------------------------*/
+#blanc{
+    background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
+    padding: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+#blanc #iphone_img img{
+    
+}
+
+#blanc h2{
+    font-weight: 300;
+    font-size: 36px;
+    margin: 50px 0 40px 0;
+    padding: 0;
+}
+
+#blanc p{
+    width: 100%;
+    font-size: 20px;
+}
+
+
+#blanc p a{
+    display: inline-block;
+    font-size: 25px;
+    color: #2b9efd;
+    margin-top: 40px;
+}
+
+/*--------------------------------------------
+                FORMULAIRE
+---------------------------------------------*/
+#formulaire fieldset{
+    margin-top: 30px;
+}
+
+#formulaire legend{
+    color: #ffffff;
+    text-align: center;
+    font-size: 50px;
+    border: 0;
+}
+
+
+#formulaire .form-group{
+    margin: 25px 0;
+}
+
+#formulaire fieldset .form-group:first-of-type{
+    margin-bottom: 0;
+}
+
+#formulaire .controls{
+    text-align: left;
+    position: relative;
+}
+
+#formulaire input{
+    height: 48px;
+    padding: 9px 12px 3px 12px;
+    font-size: 20px;
+}
+
+#formulaire textarea{
+    padding-top: 9px;
+    font-size: 20px;
+}
+
+#formulaire label{
+    position: absolute;
+    left:25px;
+    top: 5px;
+    color: #1e1e1e;
+    font-size: 20px;
+    display: inline-block;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#formulaire label:focus, #formulaire label:hover{
+    cursor: text;
+    color: #2b9efd;
+}
+
+#formulaire label.active{
+    top: -20px;
+    background-color: rgba(255,255,255,1);
+}
+
+#formulaire button{
+    font-size: 20px;
+    text-align: center;
+}
+/*--------------------------------------------
+                FOOTER
+---------------------------------------------*/
+#footer{
+    background-color: #1e1e1e;
+    margin-top: 50px;
+}
+
+#footer p{
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 15px;
+    text-align: center;
+    line-height: 50px;
+}
+/*--------------------------------------------
+                FIN
+---------------------------------------------*/
+/*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
+/*==========  Non-Mobile First Method  ==========*/
+
+    /* Large Devices, Wide Screens */
+    @media only screen and (max-width : 1200px) {
+                
+    }
+
+    /* Medium Devices, Desktops */
+    @media only screen and (max-width : 992px) {
+        .navbar ul li{
+            width: calc(100% / 3);
+            margin: 0;
+            padding: 0;
+        }
+        
+        #menu ul{
+            width: 100%;
+        }
+        
+    }
+
+    /* Small Devices, Tablets */
+    @media only screen and (max-width : 768px) {
+        
+        
+    }
+
+    /* Extra Small Devices, Phones */ 
+    @media only screen and (max-width : 480px) {
+            
+    }
+
+    /* Custom, iPhone Retina */ 
+    @media only screen and (max-width : 320px) {
+        
+    }
