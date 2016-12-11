@@ -9,7 +9,7 @@ $(function () {
         },
         
         {
-            "lien"          : "porfolio/04-HTMLetCSSAvancés/index.html",
+            "lien"          : "porfolio/04-HTMLetCSSAvances/index.html",
             "image"         : "assets/images/site-magistere.png",
             "alternative"   : "Site Magistère de Physicochimie d'Orsay",
             "methode"       : "Site adaptatif en HTML5 et CSS3."
@@ -45,7 +45,7 @@ $(function () {
     ];
     for(var i = 0 ; i < Sites.length ; i++){
         $("<div>").addClass("col-md-4 col-sm-6")
-        .append($("<a>").attr({'href': Sites[i].lien, 'target': '_blank'})
+        .append($("<a>").attr({'href': Sites[i].lien, 'target': '_blank', 'rel': 'nofollow'})
                 .append($("<img>").attr({'src':Sites[i].image, 'alt' : Sites[i].alternative})))
         .append($("<p>").text(Sites[i].methode))
         .appendTo($('main'));

@@ -1,2 +1,5 @@
 User-agent: *
+
+Disallow : /porfolio/
+
 Sitemap : http://www.tatianafischer.fr/sitemap.xml
