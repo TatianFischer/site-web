@@ -171,7 +171,9 @@ a{
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
-
+        #competence > div{
+            padding : 0 10px;
+        }
     }
 
     /* Medium Devices, Desktops */
