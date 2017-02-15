@@ -18,6 +18,17 @@ a{
 	color: white;
 }
 
+#page li[role=tab]{
+    margin-top: 0;
+}
+
+#page li[role=tab] a{
+    border-radius: 4px 4px 0 0;
+    border-color: #bec2ef;
+    border-width: 3px;
+    margin: 0;
+}
+
 #page a:hover{
 	color: #BEC2EF;
 }
