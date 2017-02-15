@@ -2,6 +2,7 @@
 // HEADER ------------------------------
 $title = 'Développeuse web';
 $page = 'Page d\'accueil du site';
+
 require_once('inc/header.inc.php');
 ?>
 <!-- Contenu HTML -->
@@ -21,6 +22,7 @@ require_once('inc/header.inc.php');
     </div><!-- fin du conteneur -->
 </main>
 <?php
+
 // FOOTER -------------------------------
 require_once('inc/footer.inc.php');
 ?>

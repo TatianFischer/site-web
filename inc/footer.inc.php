@@ -1,5 +1,5 @@
 <!-- FOOTERs -->			
-			<footer class="bleu row" role="link">
+			<footer class="bleu row r-m" role="link">
                 <h3 class="col-sm-6"> Plus d'informations sur :</h3>
                 <ul class="col-sm-6" id="liens">
                     <li class="col-xs-1 col-sm-offset-2">
