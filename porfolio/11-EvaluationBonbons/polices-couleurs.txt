@@ -1,0 +1,11 @@
+Polices : 
+	font-family: 'Dosis', sans-serif;
+	font-family: 'Architects Daughter', cursive;
+	FontAwesome 4.4
+
+Couleurs : 
+	orange : #f39c12
+	bleu : #3498db
+	vert : #16a085
+	noir : #000
+	blanc : #FFF

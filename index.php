@@ -2,7 +2,7 @@
 // HEADER ------------------------------
 $title = 'Développeuse web';
 $page = 'Page d\'accueil du site';
-include('inc/header.inc.php');
+require_once('inc/header.inc.php');
 ?>
 <!-- Contenu HTML -->
 <main class="row r-m">
@@ -22,5 +22,5 @@ include('inc/header.inc.php');
 </main>
 <?php
 // FOOTER -------------------------------
-include('inc/footer.inc.php');
+require_once('inc/footer.inc.php');
 ?>

@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Site Responsive avec Bootstrap">
+    
+    <title>Les bonbons de chez Hugo !!</title>
+    
+    <!--Pour Internet Explorer : s'assurer qu'il utilise la dernière version du moteur de rendu-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+    <!--Affichage sans zoom sur les mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CDN : Latest compiled and minified CSS. http://getbootstrap.com/getting-started/-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Font Awesome -->
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    
+    <!-- Google Font :-->
+    <!-- font-family: 'Dosis', sans-serif; ------ font-family: 'Architects Daughter', cursive;-->
+    <link href="https://fonts.googleapis.com/css?family=Architects+Daughter|Dosis" rel="stylesheet">
+    
+    <!-- Ma feuille de style -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    
+    <!-- HTML 5 Shiv-min script tag with SRI - Polyfill (voir p8 du cahier)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+</head>
+
+<!------------------------------------------------------------------------------------------------------------------------------------------------------->
+
+
+<!-------------------------------------------------------------------------------------------------------------------------------------------------------->
+<body>
+    <!------------------------------------->
+    <!--  BARRE DE NAVIGATION  -->
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <!-- HEADER : brand et burger -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Bonbons !</a>
+            </div>
+
+            <!-- LIENS DE NAVIGATION -->
+            <div class="collapse navbar-collapse navbar-right" id="liensNavigation">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#presentation">Présentation</a>
+                    </li>
+                    <li class="active">
+                        <a href="#produits">Produits</a>
+                    </li>
+                    <li><a href="#trouver">Nous trouver</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- Fin du container  -->
+    </nav>
+<!-------------------------------------------------------->
+
+    <main class="container">
+<!---------------------------------------------------------->    
+        <!-- Barre de message -->
+        <div class="row" id="barreMessage">
+            <p class="message">
+               <i class="fa fa-quote-left" aria-hidden="true"></i>
+                     Les meilleurs bonbons de Paris près du Canal 
+                <i class="fa fa-quote-right" aria-hidden="true"></i> 
+            </p>
+        </div>
+<!-------------------------------------------------------->
+
+<!---------------------------------------------------------->
+        <!-- PRESENTATION-->
+        <section class="row" id="presentation">
+            <h1><i class="fa fa-star-o" aria-hidden="true"></i> &Agrave; propos de Bonbons !</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+            <p>
+                Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.
+            </p>
+            <p>
+                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a.
+            </p>
+        </section>
+        
+          <!-- PRODUITS -->
+        <section class="row" id="produits">
+            <h1><i class="fa fa-gift" aria-hidden="true"></i> Nos produits</h1>
+            <p>
+                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+            </p>
+            <p>
+                In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a,
+            </p>
+        </section>
+        
+        <!-- CONTACT -->
+        <section class="row" id="trouver">
+            <h1><i class="fa fa-map-signs" aria-hidden="true"></i> Nous trouver</h1>
+            <aside class="col-md-7">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2624.043095228202!2d2.366417!3d48.876455!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e66e752fbebb65%3A0x2c2b65a37f07b13d!2s13+Rue+des+%C3%89cluses+Saint-Martin%2C+75010+Paris%2C+France!5e0!3m2!1sfr!2sus!4v1481640619519" height="450" frameborder="0" style="border:0" allowfullscreen id="googlemap"></iframe>
+            </aside>
+            <article class="col-md-5 col-md-offset-0 col-xs-8 col-xs-offset-2">
+                <address>
+                    <h3>Nous sommes situés au :</h3>
+                    <p>    
+                        13 Rue des Écluses Saint-Martin <br>
+                        75010, Paris <br>
+                        <a href="+0 805 62 23 45">0 805 62 23 45</a>
+                    </p>
+                </address>
+                <h2>Newsletter</h2>
+                <form action="newsletter.php" method="post" id="formContact">
+                    <fieldset>
+                        <legend>Abonnez-vous à notre newsletter !</legend>
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="email" placeholder="Mon email" name="email">
+                        </div>
+                        <button type="submit" class="btn btn-default">Je m'abonne !</button>    
+                    </fieldset>
+                </form>
+            </article>    
+        </section>
+    
+<!-------------------------------------------------------->
+    </main><!-- FIN DU CONTENEUR-->
+    
+<!---------------------------------------------------------->
+    <!-- FOOTER -->
+    <footer class="container-full">
+        <div class="row r-m">
+            <h2>Bonbons !</h2>
+            <address>
+                <p>    
+                    13 Rue des Écluses Saint-Martin <br>
+                    75010, Paris <br>
+                    <a href="+0 805 62 23 45">0 805 62 23 45</a>
+                </p>
+            </address>
+        </div>
+    </footer>
+<!-------------------------------------------------------->
+
+<!---------------------------------------------------------->        
+    <!-- jQuery -->
+    <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   
+    <!-- Latest compiled and minified JavaScript. http://getbootstrap.com/getting-started/ -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    <!-- Mon fichier JavaScript -->
+    <script src="assets/js/script.js"></script>
+</body>
+</html>

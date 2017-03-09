@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Site Responsive avec Bootstrap">
+    
+    <title>Atelier responsive</title>
+    
+    <!--Pour Internet Explorer : s'assurer qu'il utilise la dernière version du moteur de rendu-->
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    
+    <!--Affichage sans zoom sur les mobiles-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Bootstrap CDN : Latest compiled and minified CSS. http://getbootstrap.com/getting-started/-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    
+    <!-- Ma feuille de style -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    
+    <!-- HTML 5 Shiv-min script tag with SRI - Polyfill (voir p8 du cahier)-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
+    
+    <style>
+        [class*="col-"] {
+            background-color:darkturquoise;
+            border: 1px solid black;
+            padding-bottom: 15px;
+            padding-top: 15px;
+            margin-bottom: 5px;
+            text-align: center;
+        }
+        
+        .row{
+            margin:0;
+        }
+    </style>
+</head>
+
+
+<body>
+    
+    <!-- Le container va inclure l'ensemble de nos lignes et colonnes -->
+    <div class="container">
+        
+        <!-- Création d'une ligne -->
+        <div class="row">
+            
+            <!--Dans votre ligne vous pouvez créer plusieurs colonnenes, mais rappelez-vous, toujours sur la base de 12 colonnes -->
+            
+            <!-- Une grand colonne -->
+            <div class="col-lg-12">COL-LG-12</div>
+            <!-- Deux colonnes côte à côte-->
+            <div class="col-lg-6">COL-LG-6</div>
+            <div class="col-lg-6">COL-LG-6</div>
+            <!-- Trois colonnes côte à côte -->
+            <div class="col-lg-4">COL-LG-4</div>
+            <div class="col-lg-4">COL-LG-4</div>
+            <div class="col-lg-4">COL-LG-4</div>
+            <!-- Quatre colonnes côte à côte
+            -->
+            <div class="col-lg-3">COL-LG-3</div>
+            <div class="col-lg-3">COL-LG-3</div>
+            <div class="col-lg-3">COL-LG-3</div>
+            <div class="col-lg-3">COL-LG-3</div>
+            
+            <!-- Deux colonnes 4 et 8 soit 12-->
+            <div class="col-lg-4">COL-LG-4</div>
+            <div class="col-lg-8">COL-LG-8</div>
+            
+            <hr>
+            
+            <!-- je peux imbriquer mes rangées -->
+            <div class="row">
+                <!-- Deux colonnes 4 et 8 soit 12-->
+                <div class="col-lg-4">COL-LG-4</div>
+                <div class="col-lg-8">COL-LG-8</div>
+            </div>
+            
+        </div> <!--Fin .row-->
+        
+        <!--
+            plusieurs types de colonnes
+            
+            lg : Ecran Large
+            md : Ecran medium
+            sm : Ecran réduit
+            xs : Ecran minuscule
+        -->
+        <hr>
+        
+        <div class="row">
+            <!-- Test avec LG -->
+            <div class="col-lg-6">COL-LG-6</div>
+            <div class="col-lg-6">COL-LG-6</div>
+            <!-- Test avec MD -->
+            <div class="col-md-6">COL-MD-6</div>
+            <div class="col-md-6">COL-MD-6</div>
+            <!-- Test avec SM -->
+            <div class="col-sm-6">COL-SM-6</div>
+            <div class="col-sm-6">COL-SM-6</div>
+            <!-- Test avec XS -->
+            <div class="col-xs-6">COL-XS-6</div>
+            <div class="col-xs-6">COL-XS-6</div>
+        </div>
+        
+        <hr>
+        
+        <!-- je peux préciser pour chaque taille d'écran le nombre de colonnes que je souhaite -->
+        <div class="row">
+            <div class="col-lg-2 col-md-4 col-sm-6">COL-LG-2 - COL-MD-4 - COL-SM-6</div>
+            <div class="col-lg-2 col-md-4 col-sm-6">COL-LG-2 - COL-MD-4 - COL-SM-6</div>
+            <div class="col-lg-2 col-md-4 col-sm-6">COL-LG-2 - COL-MD-4 - COL-SM-6</div>
+            <div class="col-lg-2 col-md-4 col-sm-6">COL-LG-2 - COL-MD-4 - COL-SM-6</div>
+            <div class="col-lg-2 col-md-4 col-sm-6">COL-LG-2 - COL-MD-4 - COL-SM-6</div>
+            <div class="col-lg-2 col-md-4 col-sm-6">COL-LG-2 - COL-MD-4 - COL-SM-6</div>
+        </div>
+        
+        <hr>
+        
+        <!-- A VOIR VOUS MÊME :
+            -col-xx-push-* : Décaler une colonne vers la droite
+            
+            -col-xx-push-* : Décaler une colonne vers la gauche
+            
+            -col-xx-offset-* : permet de sauter des colonnes
+            
+            -visible-xx : permet de rendre visible la colonne pour un type d'écran en particulier.
+            
+            -hidden-xx : permet de cacher la colonne pour un type d'écran en particulier.
+        -->
+        
+        
+    </div> <!-- Fin container-->
+    
+    
+    
+    
+    
+    <!-- jQuery -->
+    <script  src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+   
+    <!-- Latest compiled and minified JavaScript. http://getbootstrap.com/getting-started/ -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</body>
+</html>

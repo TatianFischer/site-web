@@ -109,12 +109,25 @@ header nav ul li {
     float: left;
 }
 
+@media only screen and (max-width : 650px) {
+    header nav ul li{
+        width: 100%;
+        line-height: 1.8rem;
+    }
+}
+
 header nav ul li a {
     text-decoration: none;
     font-family: 'Gloria Hallelujah', cursive;
     font-size: 1.8em;
     color: #00486E;
     text-transform: uppercase;
+}
+
+@media only screen and (max-width : 700px) {
+    header nav ul li a{
+        font-size: 1.4em;           
+    }
 }
 
 header nav ul li a:hover {
@@ -163,10 +176,17 @@ section h1 {
 section aside {
     width: 50%;
     height: 100%;
+    min-width: 200px;
     float: left;
     box-sizing: border-box;
     padding: 30px 0;
     background-color: white;
+}
+
+@media only screen and (max-width : 450px) {
+    section aside{
+        width: 100%;           
+    }
 }
 
 section aside figure {
@@ -195,10 +215,17 @@ section aside figcaption {
 section article{
     width: 50%;
     height: auto;
+    min-width: 200px;
     float: left;
     box-sizing: border-box;
     padding: 0px 15px 0px 10px;
     background-color: white;
+}
+
+@media only screen and (max-width : 450px) {
+    section article{
+        width: 100%;           
+    }
 }
 
 section article.fullpage{
@@ -267,8 +294,6 @@ section article ul a:hover {
 }
 
 .partenaires h2{
-    width: 100%;
-    height: auto;
     padding-left: 20px;
     margin: 5px 0 15px 0;
     font-family: 'Gloria Hallelujah', cursive;
@@ -360,6 +385,13 @@ footer .googlemap{
     border-radius:15px;
 }
 
+@media only screen and (max-width : 600px) {
+    footer .googlemap{
+        width: calc(100% - 10px);
+        margin: 10px 0;
+    }
+}
+
 footer .googlemap iframe{
     width: 100%;
     height:100%;
@@ -373,6 +405,13 @@ footer .newsletter{
     height: calc(100% - 10px);
     float: left;
     margin: 0 5px;
+}
+
+@media only screen and (max-width : 600px) {
+    footer .newsletter{
+         width: calc(100% - 10px);
+        margin: 0;
+    }
 }
 
 .newsletter fieldset{
@@ -423,6 +462,13 @@ footer .contact{
     margin: 10px 0px 10px 5px;
     border: 3px solid white;
     border-radius: 15px;
+}
+
+@media only screen and (max-width : 600px) {
+    footer .contact{
+        width: calc(100% - 10px);
+        margin: 10px 0px;
+    }
 }
 
 footer h2{

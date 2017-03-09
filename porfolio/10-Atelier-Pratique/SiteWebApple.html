@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Atelier pratique</title>
     <meta name="robots" content="noindex, nofollow">
-    
     <!--Pour Internet Explorer : s'assurer qu'il utilise la dernière version du moteur de rendu-->
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     
@@ -30,161 +29,185 @@
 </head>
     
 <body>
-    <div class="container-full">
+    
       
-       <!-----------------------NAVIGATION---------------------->
-        <nav class="navbar">
-            <div class="container-fluid r-p">
-               <div class="navbar-header">
+   <!-----------------------NAVIGATION---------------------->
+    <nav class="navbar">
+        <div class="container-fluid r-p">
+           
+            <!-- Entête du menu -->
+            <div class="navbar-header">
+                <!-- Gestion du menu burger : version menu -->
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_collapsed" aria-expanded="false">
                     <span class="sr-only">Activer la navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
+                <!-- Le logo du site -->
                 <a class="navbar-brand" href="#"><i class="fa fa-apple" aria-hidden="true"></i></a>
             </div>
             
-                <div class="collapse navbar-collapse" id="nav_collapsed">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Mac</a></li>
-                        <li><a href="#">iPad</a></li>
-                        <li><a href="#">iPhone</a></li>
-                        <li><a href="#">Watch</a></li>
-                        <li><a href="#">TV</a></li>
-                        <li><a href="#">Music</a></li>
-                        <li><a href="#">Assistance</a></li>
-                        <li><a href="#"><i class="fa fa-search" aria-hidden="true"></i></a></li>
-                        <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav> <!-- Fin de la navigation -->
-        
-        <!-----------------------MENU---------------------->
-        <div class="row r-m">  
-            <div id="menu" class="col-xs-12 r-p">
-                <ul class="col-lg-8 col-lg-offset-2 col-xs-12 r-p">
-                    <li class="col-md-2 col-sm-4 col-xs-6">
-                       <a href="#"><img src="assets/img/menu/iPhone7.png" alt="iPhone 7"></a>
-                    </li>
-                    <li class="col-md-2 col-sm-4 col-xs-6">
-                        <a href="#"><img src="assets/img/menu/iPhone6s.png" alt="i Phone 6s"></a>
-                    </li>
-                    <li class="col-md-2 col-sm-4 col-xs-6">
-                        <a href="#"><img src="assets/img/menu/iPhoneSE.png" alt="iPhone SE"></a>
-                    </li>
-                    <li class="col-md-2 col-sm-4 col-xs-6">
-                        <a href="#"><img src="assets/img/menu/iOs10.png" alt="iOs 10"></a>
-                    </li>
-                    <li class="col-md-2 col-sm-4 col-xs-6">
-                        <a href="#"><img src="assets/img/menu/Accessoires.png" alt="Accessoires"></a>
-                    </li>
-                    <li class="col-md-2 col-sm-4 col-xs-6">
-                        <a href="#"><img src="assets/img/menu/Comparer.png" alt="Comparer"></a>
-                    </li>
+            <!-- Le menu -->
+            <div class="collapse navbar-collapse" id="nav_collapsed">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">TV</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">Assistance</a></li>
+                    <li><a href="#"><i class="fa fa-search" aria-hidden="true" aria-label="recherche"></i></a></li>
+                    <li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true" aria-label="shopping"></i></a></li>
                 </ul>
             </div>
-        </div>  <!-- FIN DU MENU -->
+        </div>
+    </nav> <!-- Fin de la navigation -->
+    
+    <main>
+        
+        <!-----------------------MENU---------------------->
+        <section id="menu">
+            <div class="container r-p">
+                <div class="row r-m">  
+                    <div class="col-xs-12 r-p">
+                        <ul class="list-inline col-xs-12 r-p">
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                               <a href="#"><img src="assets/img/menu/iPhone7.png" alt="iPhone 7"></a>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="#"><img src="assets/img/menu/iPhone6s.png" alt="i Phone 6s"></a>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="#"><img src="assets/img/menu/iPhoneSE.png" alt="iPhone SE"></a>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="#"><img src="assets/img/menu/iOs10.png" alt="iOs 10"></a>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="#"><img src="assets/img/menu/Accessoires.png" alt="Accessoires"></a>
+                            </li>
+                            <li class="col-md-2 col-sm-4 col-xs-6">
+                                <a href="#"><img src="assets/img/menu/Comparer.png" alt="Comparer"></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>   
+        </section><!-- FIN DU MENU -->
+        
         
         <!-----------------------IPHONE 7---------------------->
-        <div class="row r-m">
-            <div id="iphone7" class="col-md-6 col-md-offset-3">
-                <p>
-                   <strong>iPhone</strong><br>
-                   <span>Numero 7</span><br>
-                   <a href="#">En savoir plus >></a>  <a href="#">Acheter ></a><br>
-                   Ou rendez-vous dès aujourd'hui dans un Apple Store.
-                </p>
+        <section id="iphone7">
+            <div class="container">
+                <div class="row r-m">
+                    <div class="col-xs-12">
+                        <h2>iPhone</h2>
+                        <h3>Numero 7</h3>
+                        <p>
+                           <a href="#">En savoir plus >></a> &nbsp;&nbsp;&nbsp; <a href="#">Acheter ></a>
+                        </p>
+                        <p>
+                           Ou rendez-vous dès aujourd'hui dans un Apple Store.
+                        </p>
+                        
+                        <img src="assets/img/hero_large.jpg" alt="iPhone 7 vu de profil">
+                    </div>
+                </div>
             </div>
-            <div id="hero" class="col-md-9 col-md-offset-3">
-                <img src="assets/img/hero_large.jpg" alt="iPhone 7 vu de profil">
+        </section>
+         <!-- Fin de iphone7-->  
+
+            <!-----------------------BLANC---------------------->
+        <section id="blanc">
+            <div class="container">
+                <div class="row r-m">
+                    <aside class="col-sm-6">
+                       <img src="assets/img/iPhone.png" alt="Photo de deux iPhone" class="img-responsive">
+                    </aside>
+                    <article class="col-sm-6">
+                        <h2>Passer à l'iPhone 7.</h2>
+                        <p>
+                            &Eacute;changer votre smartphone contre un iPhone <br> neuf dans un Apple Store et bénéficiez de <br> mensualités réduites.
+                        </p>
+                        <a class="btn btn-primary" href="#">Comment ça marche ?</a>
+                    </article> 
+                </div>
             </div>
-        </div> <!-- Fin de iphone7-->  
-       
-        <!-----------------------BLANC---------------------->
-        <div class="row r-m">
-           <div class="col-xs-12" id="blanc">
-               <div class="col-lg-4 col-lg-offset-2 col-md-5 col-md-offset-1">
-                   <img src="assets/img/iPhone.png" alt="Photo de deux iPhone">
-               </div>
-               <div class="col-lg-4 col-md-5">
-                   <h2>Passer à l'iPhone 7.</h2>
+        </section>
+             <!-- FIN DE LA BANDE BLANCHE-->
+
+            <!-----------------------CONTACT---------------------->
+            <section id="contact">
+                <div class="container">   
+                    <div class="row r-m">
+                        <div class="col-sm-push-2 col-sm-8 col-xs-10 col-xs-push-1">
+                            <form class="form-horizontal" id="formulaire" method="post" action="contact.php">
+                                <fieldset>
+
+                                    <!-- Form Name -->
+                                    <legend>Contact</legend>
+
+                                    <!-- NOM et PRENOM -->
+                                    <div class="form-group">  
+                                        <div class="col-xs-12 controls">
+                                            <input id="nomprenom" name="nomprenom" type="text" class="form-control input-md">
+                                            <label for="nomprenom">Nom et prénom</label> 
+                                        </div>
+                                    </div>
+                                    
+                                    <!-- EMAIL ET TELEPHONE-->
+                                    <div class="form-group">
+                                        <div class="col-sm-6 controls">
+                                            <input id="email" name="email" type="email" class="form-control input-md">
+                                            <label for="email">Email</label>  
+                                        </div>
+
+                                        <div class="col-sm-6 controls">
+                                            <input id="telephone" name="telephone" type="tel" class="form-control input-md">
+                                            <label for="telephone">Téléphone</label> 
+                                        </div>
+                                    </div>
+
+                                    <!-- SUJET -->
+                                    <div class="form-group">  
+                                        <div class="col-xs-12 controls">
+                                          <input id="sujet" name="sujet" type="text" class="form-control input-md">
+                                          <label for="sujet">Sujet du message</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- MESSAGE -->
+                                    <div class="form-group">
+                                        <div class="col-xs-12 controls">                     
+                                            <textarea class="form-control" rows="6" id="message" name="message"></textarea>
+                                            <label for="message">Votre message</label>
+                                        </div>
+                                    </div>
+
+                                    <!-- Button -->
+                                    <div class="form-group">
+                                        <div class="col-sm-4 col-sm-push-4 r-p">
+                                            <button type="submit" id="submit" name="submit" class="btn btn-primary">Envoyer ma demande</button>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div> <!-- FIN DU FORMULAIRE-->
+                    </div>
+                </div>
+            </section>
+            
+            <!-----------------------FOOTER---------------------->
+            <div id="footer" class="row r-m">
+                <div class="col-xs-12">
                     <p>
-                        &Eacute;changer votre smartphone contre un iPhone neuf dans un Apple Store et bénéficiez de mensualités réduites. <br>
-                        <a href="#">Comment ça marche ? ></a>
+                        Réalisation 2016 - WF3 Paris XIV - Tatiana FISCHER
                     </p>
-               </div> 
-           </div>
-       </div> <!-- FIN DE LA BANDE BLANCHE-->
-       
-        <!-----------------------CONTACT---------------------->
-        <div class="row r-m">
-            <div class="col-sm-offset-3 col-sm-6 col-xs-12">
-                <form class="form-horizontal" id="formulaire">
-                    <fieldset>
-
-                    <!-- Form Name -->
-                    <legend>Contact</legend>
-
-                    <!-- NOM ET PRENOM-->
-                    <div class="form-group">  
-                        <div class="col-sm-12 controls">
-                          <input id="nom" name="nom" type="text" class="form-control input-md">
-                          <label for="nom">Nom et  Prénom</label> 
-                        </div>
-                    </div>
-
-                    <!-- EMAIL ET TELEPHONE-->
-                    <div class="form-group">
-                        <div class="col-xs-6 controls">
-                            <input id="email" name="email" type="email" class="form-control input-md">
-                            <label for="email">Email</label>  
-                        </div>
-
-                        <div class="col-xs-6 controls">
-                            <input id="telephone" name="telephone" type="tel" class="form-control input-md">
-                            <label for="telephone">Téléphone</label> 
-                        </div>
-                    </div>
-
-                    <!-- SUJET -->
-                    <div class="form-group">  
-                        <div class="col-sm-12 controls">
-                          <input id="sujet" name="sujet" type="text" class="form-control input-md">
-                          <label for="sujet">Sujet du message</label>
-                        </div>
-                    </div>
-
-                    <!-- MESSAGE -->
-                    <div class="form-group">
-                        <div class="col-sm-12 controls">                     
-                            <textarea class="form-control" rows="6" id="message" name="message"></textarea>
-                            <label for="message">Votre message</label>
-                        </div>
-                    </div>
-
-                    <!-- Button -->
-                    <div class="form-group">
-                        <div class="col-sm-4 col-sm-push-4 r-p">
-                            <button id="submit" name="submit" class="btn btn-info">Envoyer ma demande</button>
-                        </div>
-                    </div>
-
-                    </fieldset>
-                </form>
-            </div> <!-- FIN DU FORMULAIRE-->
-        </div>
-        
-        <div id="footer" class="row r-m">
-            <div class="col-xs-12">
-                <p>
-                    Réalisation 2016 - WF3 Paris XIV - Tatiana FISCHER
-                </p>
+                </div>
             </div>
-        </div>
-       
-    </div> <!-- FIN DU CONTENEUR FULL-->  
+    </main> <!-- FIN DU MAIN-->  
 
     
     <!-- Intégration de jQuery-->
