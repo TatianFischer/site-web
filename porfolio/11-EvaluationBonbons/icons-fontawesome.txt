@@ -1,0 +1,6 @@
+fa-quote-left
+fa-quote-right
+fa-star-o
+fa-gift
+fa-clock-o
+fa-map-signs

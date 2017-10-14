@@ -124,7 +124,7 @@ header nav ul li a {
     text-transform: uppercase;
 }
 
-@media only screen and (max-width : 650px) {
+@media only screen and (max-width : 700px) {
     header nav ul li a{
         font-size: 1.4em;           
     }
@@ -294,8 +294,6 @@ section article ul a:hover {
 }
 
 .partenaires h2{
-    width: 100%;
-    height: auto;
     padding-left: 20px;
     margin: 5px 0 15px 0;
     font-family: 'Gloria Hallelujah', cursive;
@@ -389,7 +387,8 @@ footer .googlemap{
 
 @media only screen and (max-width : 600px) {
     footer .googlemap{
-        width: 100%;           
+        width: calc(100% - 10px);
+        margin: 10px 0;
     }
 }
 
@@ -410,7 +409,8 @@ footer .newsletter{
 
 @media only screen and (max-width : 600px) {
     footer .newsletter{
-        width: 100%;           
+        width: calc(100% - 10px);
+        margin: 0;
     }
 }
 
@@ -466,7 +466,8 @@ footer .contact{
 
 @media only screen and (max-width : 600px) {
     footer .contact{
-        width: 100%;           
+        width: calc(100% - 10px);
+        margin: 10px 0px;
     }
 }
 

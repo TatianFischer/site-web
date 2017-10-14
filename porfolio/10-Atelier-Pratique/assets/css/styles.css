@@ -20,8 +20,20 @@ body{
 .navbar{
     background-color: #1e1e1e;
     margin: 0;
+    border-radius:0;
 }
 
+/*--- Centrer la navbar ---*/
+.navbar .navbar-nav{
+    display: inline-block;
+    float: none;
+    vertical-align: top;
+}
+
+.navbar .navbar-collapse{
+    text-align: center;
+}
+/*----------------------------*/
 .navbar-header button{
     background-color: #000;
 }
@@ -36,16 +48,17 @@ body{
 }
 
 .navbar ul{
-    width: calc(100% - 35px);
+    
 }
 
 .navbar ul li{
-    width: calc(100% / 9);
+    margin-left: 4rem;
 }
 
 .navbar ul li:first-child{
     margin-left: 0;
 }
+
 
 .navbar ul li a{
     width: 100%;
@@ -63,7 +76,8 @@ a.navbar-brand{
     width: 50px;
     height: 50px;
     padding: 0;
-    text-align: right;
+    padding-left: 2rem;
+    text-align: center;
 }
 a.navbar-brand i{
     font-size: 28px;
@@ -75,17 +89,14 @@ a.navbar-brand i{
                 MENU
 ---------------------------------------------*/
 #menu{
-    width: 100%;
-    height: auto;
     background-color: #141414;
 }
 
 #menu ul{
-    
+    text-align: center;
 }
 
 #menu ul li{
-    display: inline-block;
     height: 130px;
     text-align: center;
 }
@@ -104,35 +115,32 @@ a.navbar-brand i{
                 IPHONE7
 ---------------------------------------------*/
 #iphone7{
-    
-}
-
-#iphone7 p{
-    color: #ffffff;
     text-align: center;
 }
 
-#iphone7 p strong{
-    font-weight: normal;
-    font-size: 50px;
-    margin-top: 30px;
-    font-family: 'Roboto', sans-serif;
-}
-
-#iphone7 p span{
-    font-weight: 100;
-    font-size: 60px;
-}
-
-#iphone7 p a{
-    color: #66bbff;
-}
-
-#hero{
+#iphone7 h2, #iphone7 h3{
+    color: #ffffff;
     
 }
 
-#hero img{
+#iphone7 h2{
+    font-weight: normal;
+    font-size: 50px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#iphone7 h3{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 60px;
+    margin-top: 0;
+}
+
+#iphone7 p{
+    color: #CCC;
+}
+
+#iphone7 img{
     width: 100%;
 }
 
@@ -141,33 +149,21 @@ a.navbar-brand i{
 ---------------------------------------------*/
 #blanc{
     background: linear-gradient(180deg, #ffffff 0%, #eeeeee 100%);
-    padding: 0;
-    padding-top: 20px;
+    padding: 40px 0 0 0;
     text-align: center;
 }
 
-#blanc #iphone_img img{
-    
-}
-
-#blanc h2{
-    font-weight: 300;
+#blanc article h2{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
     font-size: 36px;
-    margin: 50px 0 40px 0;
-    padding: 0;
+    color: #303235;
+    margin: 40px 0;
 }
 
-#blanc p{
-    width: 100%;
-    font-size: 20px;
-}
-
-
-#blanc p a{
-    display: inline-block;
-    font-size: 25px;
-    color: #2b9efd;
-    margin-top: 40px;
+#blanc article p{
+    margin: 40px 0;
+    font-size: 16px;
 }
 
 /*--------------------------------------------
@@ -234,6 +230,10 @@ a.navbar-brand i{
     font-size: 20px;
     text-align: center;
 }
+
+#formulaire .has-error .form-control {
+    border-width: 3px;
+}
 /*--------------------------------------------
                 FOOTER
 ---------------------------------------------*/
@@ -257,27 +257,36 @@ a.navbar-brand i{
 
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
-                
+        .navbar ul li{
+            margin-left: 3rem;
+        }        
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
         .navbar ul li{
-            width: calc(100% / 3);
-            margin: 0;
-            padding: 0;
-        }
-        
-        #menu ul{
-            width: 100%;
+            margin-left: 0.5rem;
         }
         
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
+        #blanc{
+            padding: 40px;
+        }
         
+        #blanc img{
+            margin: 0 auto;
+        }
         
+        input[type="email"]{
+            margin-bottom: 25px;
+        }
+        
+        #formulaire button{
+            margin-left: 15px;
+        }
     }
 
     /* Extra Small Devices, Phones */ 

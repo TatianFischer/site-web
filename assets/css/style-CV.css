@@ -63,7 +63,8 @@ a{
 }
 
 #competence > div{
-    height: 350px;
+    height: 450px;
+    height: 45rem;
     border: 3px solid #bec2ef;
     border-radius: 5px;
 }
@@ -81,12 +82,11 @@ a{
 
 .barre
 {
-	width: 70%;
 	background-color: #d5d6e1;
 	border: 2px solid white;
 	position: relative;
 	height: 15px;
-    margin:0 auto 2rem auto;
+    margin:0 auto 1.5rem auto;
 }
 
 .barre::after
@@ -131,8 +131,8 @@ a{
     color: #54c0eb;
 }
 
-.rubrique{
-    padding: 0 2rem;
+aside.rubrique{
+    padding: 0;
     box-sizing: border-box;
     
     background:#36204e;
@@ -172,9 +172,10 @@ a{
     margin-top: 20px;
 }
 
-.rubrique a
-{
+.rubrique a, .rubrique a:focus{
 	font-style: italic;
+    text-decoration: underline;
+    color: white;
 }
 
 /*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
@@ -183,12 +184,15 @@ a{
     /* Large Devices, Wide Screens */
     @media only screen and (max-width : 1200px) {
         #competence > div{
-            padding : 0 10px;
+            padding : 0 10px 10px 10px;
         }
     }
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
+        #competence > div{
+            height: auto;
+        }
 
     }
 
@@ -201,6 +205,14 @@ a{
             margin-top: 0;
         }
         
+        #competence li{
+            text-align: left;
+        }
+
+        #competence .barre{
+            margin-top: 1.1rem;
+        }
+
         #competence > div{
             height: auto;
         }

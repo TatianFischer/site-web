@@ -34,7 +34,8 @@ $(function(){
         $('#formulaire .alert-danger').remove();
         
         // 3. -- je récupère les champs à vérifier :
-        var nomprenom   = $('#nom');
+
+        var nomprenom   = $('#nomprenom');
         var email       = $('#email');
         var tel         = $('#telephone');
         var sujet       = $('#sujet');
@@ -56,7 +57,8 @@ $(function(){
         // -- Vérifier le numéro de teléphone
         // -- si le champ a été laissé vide ou pas de chiffre
         function validateTel(tel){
-            var telReg = new RegExp(/^0[1-68]([-. ]?[0-9]{2}){4}$/, 'i');
+
+            var telReg = new RegExp(/^0[1-68]([-. ]?[0-9]{2}){4}$/i);
             var valid = telReg.test(tel);
 
             if(!valid) {
@@ -78,7 +80,7 @@ $(function(){
         // -- Vérification du mail
         /*  https://paulund.co.uk/regular-expression-to-validate-email-address    */
         function validateEmail(email){
-	        var emailReg = new RegExp(/^(("[\w-\s]+")|([\w-]+(?:\.[\w-]+)*)|("[\w-\s]+")([\w-]+(?:\.[\w-]+)*))(@((?:[\w-]+\.)*\w[\w-]{0,66})\.([a-z]{2,6}(?:\.[a-z]{2})?)$)|(@\[?((25[0-5]\.|2[0-4][0-9]\.|1[0-9]{2}\.|[0-9]{1,2}\.))((25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\.){2}(25[0-5]|2[0-4][0-9]|1[0-9]{2}|[0-9]{1,2})\]?$)/, 'i');
+	        var emailReg = new RegExp(/^([\w-\.]+)@((?:[\w]+\.)+)([a-zA-Z]{2,4})/i);
             var valid = emailReg.test(email);
 
             if(!valid) {
@@ -88,7 +90,8 @@ $(function(){
             }
         }
         
-        if(validateEmail(email.val())){
+
+        if(!validateEmail(email.val())){
             isForValid = false;
             
             email.parent().addClass('has-error');

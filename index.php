@@ -2,7 +2,10 @@
 // HEADER ------------------------------
 $title = 'Développeuse web';
 $page = 'Page d\'accueil du site';
+<<<<<<< HEAD
+=======
 
+>>>>>>> 36bf2ca62599ad627d752e723bc8e8dbc0f46b85
 require_once('inc/header.inc.php');
 ?>
 <!-- Contenu HTML -->
