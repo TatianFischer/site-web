@@ -68,14 +68,14 @@
         .append($("<a>").attr({'href': Sites[i].lien, 'target': '_blank', 'rel': 'nofollow'})
                 .append($("<img>").attr({'src':Sites[i].image, 'alt' : Sites[i].alternative})))
         .append($("<p>").text(Sites[i].methode))
-        .appendTo($('main'));
+        .appendTo($('main#portfolio'));
     }
 
     for(var i = Sites.length; i <9 ; i++){
         $("<div>").addClass("col-md-4 col-sm-6")
             .append($("<div>").addClass('image'))
             .append($("<p>").text("A suivre"))
-            .appendTo($('main'));
+            .appendTo($('main#portfolio'));
     }
 
     $('#to-top').hide();
