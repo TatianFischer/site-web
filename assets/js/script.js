@@ -1,4 +1,4 @@
-$(function () {
+﻿$(function () {
     var Sites = [
         {
             "lien"          : "porfolio/02-CSS/index.html",
@@ -53,6 +53,12 @@ $(function () {
             "image"         : "assets/images/e-boutique.png",
             "alternative"   : "E-boutique",
             "methode"       : "Site de e-boutique en PHP natif"
+        },
+        {
+            "lien"          : "http://www.kutikuti.fr",
+            "image"         : "assets/images/site-kutikuti.png",
+            "alternative"   : "Site Kutì Kutì",
+            "methode"        : "Utilisation des framework Laravel (PHP), Bootstrap et jQuery"
         }
     ];
 
@@ -71,6 +77,15 @@ $(function () {
             .append($("<p>").text("A suivre"))
             .appendTo($('main'));
     }
+
+    $('#to-top').hide();
+    $(window).on("scroll", function() {
+        if($(window).scrollTop() == 0){
+            $('#to-top').hide();
+        } else {
+            $('#to-top').show();
+        }
+    });
     
 });
 

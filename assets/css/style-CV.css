@@ -63,7 +63,8 @@ a{
 }
 
 #competence > div{
-    height: 350px;
+    height: 450px;
+    height: 45rem;
     border: 3px solid #bec2ef;
     border-radius: 5px;
 }
@@ -130,8 +131,8 @@ a{
     color: #54c0eb;
 }
 
-.rubrique{
-    padding: 0 2rem;
+aside.rubrique{
+    padding: 0;
     box-sizing: border-box;
     
     background:#36204e;
@@ -171,9 +172,10 @@ a{
     margin-top: 20px;
 }
 
-.rubrique a
-{
+.rubrique a, .rubrique a:focus{
 	font-style: italic;
+    text-decoration: underline;
+    color: white;
 }
 
 /*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
@@ -188,6 +190,9 @@ a{
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
+        #competence > div{
+            height: auto;
+        }
 
     }
 

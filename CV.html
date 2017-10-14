@@ -31,9 +31,9 @@
 	<body>
 		<div class="container r-p">
 <!-- Barre de navigation -->	
-            <nav class="navbar" role="navigation">
+            <nav class="navbar" role="navigation" id="top">
                 <div class="container-fluid r-p">
-                    <div class="navbar-header">
+                    <div class="navbar-header r-m">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -41,9 +41,8 @@
                         </button>
                         <a class="navbar-brand r-m" href="index.html">FISCHER  Tatiana</a>
                     </div>
-                    <div class="collapse navbar-collapse r-p" id="menu">
+                    <div class="collapse navbar-collapse r-p r-m" id="menu">
                         <ul class="nav navbar-nav">
-                            <li><a href="index.html">Accueil</a></li>
                             <li  class="active"><a href="CV.html">C.V.</a></li>
                             <li><a href="porfolio.html">Portfolio</a></li>
                             <li><a href="contact.html">Contact</a></li>
@@ -77,10 +76,14 @@
 						    <ul class="row r-m">
 						        <li class="col-md-12 col-xs-6">Bootstrap</li>
 						        <li class="barre col-md-12 col-xs-6" data-length="70"></li>
-						        <li class="col-md-12 col-xs-6">Angular2</li>
-						        <li class="barre col-md-12 col-xs-6" data-length="20"></li>
                                 <li class="col-md-12 col-xs-6">Laravel 5.4</li>
                                 <li class="barre col-md-12 col-xs-6" data-length="60"></li>
+                                <li class="col-md-12 col-xs-6">Symfony 2.9</li>
+                                <li class="barre col-md-12 col-xs-6" data-length="60"></li>
+                                <li class="col-md-12 col-xs-6">Magento 1.9 et 2</li>
+                                <li class="barre col-md-12 col-xs-6" data-length="50"></li>
+                                <li class="col-md-12 col-xs-6">Angular2</li>
+                                <li class="barre col-md-12 col-xs-6" data-length="20"></li>
 						    </ul>
 						</div>
 						<div class="col-md-3">
@@ -118,15 +121,15 @@
                             </a>
                         </p>
                         <ul class="nav nav-tabs nav-justified" role="tablist">
-                            <li class="active" role="tab" id="formContinueTab">
-                                <a href="#formContinue" data-toggle="tab">
-                                    <h2>Formation continue</h2>
+                            <li class="active" role="tab" id="experienceTab">
+                                <a href="#experience" data-toggle="tab">
+                                    <h2>Mes expériences</h2>
                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                 </a>
                             </li>
-                            <li role="tab" id="experienceTab">
-                                <a href="#experience" data-toggle="tab">
-                                    <h2>Mes expériences</h2>
+                            <li role="tab" id="formContinueTab">
+                                <a href="#formContinue" data-toggle="tab">
+                                    <h2>Formation continue</h2>
                                     <i class="fa fa-chevron-down" aria-hidden="true"></i>
                                 </a>
                             </li>
@@ -138,8 +141,29 @@
                             </li>
                         </ul>
                         
-                        <div class="tab-content">					        
-		                    <aside id="formContinue" class="rubrique tab-pane fade in active" role="tab-pane" aria-labelledby="formContinueTab">
+                        <div class="tab-content col-sm-12">
+                            <aside id="experience" class="rubrique row tab-pane fade in active" role="tab-pane" aria-labelledby="experienceTab">
+                                <h4 class="col-sm-3">Juil. 2017 - Maintenant :</h4>
+                                <p class="col-sm-9">Développeuse full-stack Javascript et PHP.<br><b>Exacompta-Clairefontaine</b><br>Développement sous Symfony 2.9, Magento 1.9 et 2</p>
+
+                                <h4 class="col-sm-3">Fev. 2017 - Avril 2017 :</h4>
+                                <p class="col-sm-9">Développement du site  <a href="http://www.kutikuti.fr" target="blank">KütiKüti</a> pour une star-up à l'aide de Bootstrap et Laravel.</p>
+
+                                <h4 class="col-sm-3">Sept. 2014 - Oct. 2015 :</h4>
+                                <p class="col-sm-9">Professeur de Physique Chimie en lycée.</p>
+                                
+                                <h4 class="col-sm-3">Janv. 2012 - Juin 2012 :</h4>
+                                <p class="col-sm-9">Stage de Master 2ème année et de Magistère 3ème année à l'Institut des Sciences Moléculaires d'Orsay. Calculs de chimie théorique (avec le logiciel ADF).</p>
+
+                                <h4 class="col-sm-3">Avril 2011 - Juil. 2011 :</h4>
+                                <p class="col-sm-9">Stage de Magistère 2ème année à l'école Polytechnique, Palaiseau. Calculs de chimie théorique (avec le logiciel Gaussian).</p>
+
+                                <h4 class="col-sm-3">Juin 2010 - Juil. 2010 :</h4>
+                                <p class="col-sm-9">Stage 3ème année de Licence et 1ère année de Magistère à l'ICMMO à Orsay. Photochimie et synthèse organique.</p>
+                            </aside><!-- FIN DE L'ONGLET 1 -->
+
+
+		                    <aside id="formContinue" class="rubrique row tab-pane fade" role="tab-pane" aria-labelledby="formContinueTab">
                                 <h3 class="col-xs-12">Formation développeur-intégrateur web (Ecole Web Force 3)</h3>
 
                                 <h4 class="col-sm-3">Nov. 2016 - Fév. 2017 :</h4>
@@ -183,23 +207,9 @@
                                 <p class="col-sm-9">
                                     Plateforme Microsoft Virtual Academy :<br> Apprendre à coder pour les vrais débutants <br>Les fondamentaux du développent en C# - Chapitre 1 et 2.
                                 </p>
-		                    </aside><!-- FIN DE L'ONGLE 1 -->
-                         
-                           
-                          
-                            <aside id="experience" class="rubrique tab-pane fade" role="tab-pane" aria-labelledby="experienceTab">
-                                <h4 class="col-sm-3">Sept. 2014 - Oct. 2015 :</h4>
-                                <p class="col-sm-9">Professeur de Physique Chimie en lycée.</p>
-                                
-                                <h4 class="col-sm-3">Janv. 2012 - Juin 2012 :</h4>
-                                <p class="col-sm-9">Stage de Master 2ème année et de Magistère 3ème année à l'Institut des Sciences Moléculaires d'Orsay. Calculs de chimie théorique (avec le logiciel ADF).</p>
-                                <h4 class="col-sm-3">Avril 2011 - Juil. 2011 :</h4>
-                                <p class="col-sm-9">Stage de Magistère 2ème année à l'école Polytechnique, Palaiseau. Calculs de chimie théorique (avec le logiciel Gaussian).</p>
-                                <h4 class="col-sm-3">Juin 2010 - Juil. 2010 :</h4>
-                                <p class="col-sm-9">Stage 3ème année de Licence et 1ère année de Magistère à l'ICMMO à Orsay. Photochimie et synthèse organique.</p>
-                            </aside><!-- FIN DE L'ONGLE 2 -->
+		                    </aside><!-- FIN DE L'ONGLET 2 -->
 
-                            <aside id="formInitiale" class="rubrique tab-pane fade" role="tab-pane" aria-labelledby="formInitialeTab">
+                            <aside id="formInitiale" class="rubrique row tab-pane fade" role="tab-pane" aria-labelledby="formInitialeTab">
                                 <h4 class="col-sm-3">Sept. 2012 - Juin 2014 :</h4>
                                 <p class="col-sm-9">Préparation de l'Agrégation de chimie. Centre de l'ENS ULM à Montrouge puis à l'Université Lille 1.
                                 Admissibilité au concours.</p>
@@ -209,10 +219,13 @@
                                 <p class="col-sm-9">Master de Chimie et Physicochimie des matériaux. Dans le cadre de la 3ème année de Magistère. Mention assez bien.</p>
                                 <h4 class="col-sm-3">Sept. 2009 - Juil. 2010 :</h4>
                                 <p class="col-sm-9">Licence de Chimie. Mention Bien.</p>
-                            </aside><!-- FIN DE L'ONGLE 3 -->
+                            </aside><!-- FIN DE L'ONGLET 3 -->
                         </div> <!-- Fin du tab-content-->
 					</section>
 <!-- Fin de la section contenu -->
+                    <div id="to-top">
+                        <a href="#top" title="remonter"><i class="fa fa-arrow-circle-o-up" aria-hidden="true"></i></a>
+                    </div>
 				</main>
 			</div> <!-- Fin du corps de la page -->
 
@@ -220,7 +233,7 @@
 			<footer class="bleu row" role="link">
                 <h3 class="col-sm-6"> Plus d'informations sur :</h3>
                 <ul class="col-sm-6" id="liens">
-                    <li class="col-xs-1 col-sm-offset-2">
+                    <li class="col-xs-1 col-xs-offset-2">
                         <a href="http://www.viadeo.com/fr/profile/tatiana.fischer1" target="_blank"><i class="fa fa-viadeo"></i></a>
                     </li>
                     <li class="col-xs-1 col-xs-offset-3">
