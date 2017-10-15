@@ -33,9 +33,9 @@
 	<body>
 		<div class="container r-p">
 <!-- Barre de navigation -->	
-            <nav class="navbar" role="navigation">
+            <nav class="navbar" role="navigation" id='top'>
                 <div class="container-fluid r-p">
-                    <div class="navbar-header">
+                    <div class="navbar-header r-m">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#menu">
                             <span class="icon-bar"></span>
                             <span class="icon-bar"></span>
@@ -43,19 +43,16 @@
                         </button>
                         <a class="navbar-brand r-m" href="index.php">FISCHER  Tatiana</a>
                     </div>
-                    <div class="collapse navbar-collapse r-p" id="menu">
+                    <div class="collapse navbar-collapse r-p r-m" id="menu">
                         <ul class="nav navbar-nav">
-                            <li <?= ($title=='Développeuse web') ? 'class="active"' : ''?>>
-                                <a href="index.php">Accueil</a>
-                            </li>
                             <li <?= ($title=='C.V') ? 'class="active"' : ''?> >
                                 <a href="CV.php">C.V.</a>
                             </li>
+                            <li <?= ($title=='Formation') ? 'class="active"' : ''?>>
+                                <a href="formation.php">Formation</a>
+                            </li>
                             <li <?= ($title=='Porfolio') ? 'class="active"' : ''?> >
                                 <a href="porfolio.php">Portfolio</a>
-                            </li>
-                            <li <?= ($title=='Contact') ? 'class="active"' : ''?> >
-                                <a href="contact.php">Contact</a>
                             </li>
                         </ul>
                     </div>

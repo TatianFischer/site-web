@@ -46,6 +46,51 @@ main{
     width: 100%;
 }
 
+#contact{
+    margin-bottom: 20px;
+}
+
+#contact>*{
+    font-size:20px;
+    font-size: 2rem;
+    color: white;
+}
+
+#contact h1{
+    font-family: 'Gloria Hallelujah', cursive;
+    color:white;
+    text-align: center;
+    font-size: 30px;
+    font-size: 3rem;
+    margin: 10px 0 30px 0;
+}
+
+#coordonnees{
+    text-align: center;
+    border: 3px solid #54c0eb;
+    border-radius: 1em;
+    padding: 5px;
+}
+
+aside
+{
+    text-align: center;
+}
+
+#coordonnees p{
+    width: 100%;
+}
+
+#coordonnees a
+{
+    color: #54c0eb;
+    margin:1rem;
+}
+
+#mobilite img{
+    max-width:250px;
+}
+
 /*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
 /*==========  Non-Mobile First Method  ==========*/
 
@@ -56,14 +101,16 @@ main{
 
     /* Medium Devices, Desktops */
     @media only screen and (max-width : 992px) {
-        #conteneur p{
+        #conteneur > p{
             width: 90%;
         }
     }
 
     /* Small Devices, Tablets */
     @media only screen and (max-width : 768px) {
-    
+        #coordonnees, #mobilite{
+            font-size: 16px;
+        }
     }
 
     /* Extra Small Devices, Phones */ 

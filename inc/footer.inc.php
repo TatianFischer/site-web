@@ -2,7 +2,7 @@
 			<footer class="bleu row" role="link">
                 <h3 class="col-sm-6"> Plus d'informations sur :</h3>
                 <ul class="col-sm-6" id="liens">
-                    <li class="col-xs-1 col-sm-offset-2">
+                    <li class="col-xs-1 col-xs-offset-2">
                         <a href="http://www.viadeo.com/fr/profile/tatiana.fischer1" target="_blank"><i class="fa fa-viadeo"></i></a>
                     </li>
                     <li class="col-xs-1 col-xs-offset-3">
