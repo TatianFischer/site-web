@@ -15,8 +15,8 @@ require_once('inc/header.inc.php');
             Si vous êtes près à accueillir, dès maintenant, une fille <strong>développeuse full-stack</strong> dans votre équipe alors n'hésité pas à  <a href="contact">me contacter</a>.
         </p>
         <div id="bouton">
-            <a href="CV.php">
-                <img src="assets/images/curriculum.png" alt="vers le CV">
+            <a href="assets/Fischer-Tatiana-Developpeur-Web.pdf" title="Lien vers le CV imprimable" target="_blank">
+                <img src="assets/images/curriculum.png" alt="vers le CV" title="Lien vers le CV imprimable">
             <p>Vers le CV</p>
             </a>
         </div>
@@ -26,7 +26,6 @@ require_once('inc/header.inc.php');
                 <p>Mon profil vous intéresse ?</p>
                 <p>Contactez moi par mail :<br> <a href="mailto:tatiana.fischer@hotmail.fr">tatiana.fischer@hotmail.fr</a>
                 </p>
-                <p><a href="assets/Fischer-Tatiana-Developpeur-Web.pdf">Lien vers le CV imprimable</a></p>
             </aside>
         </div> 
         <aside class="col-sm-4 col-sm-offset-1" id="mobilite">
