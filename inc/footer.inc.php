@@ -26,5 +26,11 @@
    
         <!-- Latest compiled and minified JavaScript. http://getbootstrap.com/getting-started/ -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <script type="text/javascript" src="assets/js/script.js"></script>
+
+        <?php if(isset($js)) : ?>
+          <script type="text/javascript" src="assets/js/<?=$js?>"></script>
+        <?php endif; ?>
 	</body>
 </html>
