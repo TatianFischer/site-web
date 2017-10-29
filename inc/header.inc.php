@@ -24,7 +24,9 @@
 		
 		<!-- Mes feuilles de style -->
 		<link rel="stylesheet" href="assets/css/style-menu.css" media="screen">
-		<link rel="stylesheet" href="assets/css/style-index.css" media="screen">
+        <?php if(isset($css)) : ?>
+		  <link rel="stylesheet" href="assets/css/<?= $css ?>" media="screen">
+        <?php endif; ?>
 		
 		<!-- HTML 5 Shiv-min script tag with SRI - Polyfill (voir p8 du cahier)-->
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" crossorigin="anonymous"></script>
@@ -45,8 +47,8 @@
                     </div>
                     <div class="collapse navbar-collapse r-p r-m" id="menu">
                         <ul class="nav navbar-nav">
-                            <li <?= ($title=='C.V') ? 'class="active"' : ''?> >
-                                <a href="CV.php">C.V.</a>
+                            <li <?= ($title=='Expériences') ? 'class="active"' : ''?> >
+                                <a href="experiences.php">Expériences</a>
                             </li>
                             <li <?= ($title=='Formation') ? 'class="active"' : ''?>>
                                 <a href="formation.php">Formation</a>

@@ -2,6 +2,7 @@
 // HEADER ------------------------------
 $title = 'Développeuse web';
 $page = 'Page d\'accueil du site';
+$css = 'style-index.css';
 
 require_once('inc/header.inc.php');
 ?>
@@ -10,14 +11,14 @@ require_once('inc/header.inc.php');
     <div id="conteneur" class="col-xs-12">
         <h1>Tatiana FISCHER <br> Développeur-Intégrateur Web Junior</h1>
         <p>
-            Actuellement en poste en tant que Développeuse Full-Stack au sein de l'entreprise EXacompta - Clairefontaine jusqu'au 31 mars 2017.<br>
+            Actuellement en poste en tant que Développeuse Full-Stack au sein de l'entreprise Exacompta - Clairefontaine jusqu'au 31 mars 2017.<br>
             J'ai suivie une formation certifiante de Développeur-Intégrateur Web à l'école WebForce3.  Et je perfectionne sur les plateformes d'e-learning (OpenClassRoom notamment) et les sites de tutoriels.<br><br>
-            Si vous êtes près à accueillir, dès maintenant, une fille <strong>développeuse full-stack</strong> dans votre équipe alors n'hésité pas à  <a href="contact">me contacter</a>.
+            Si vous êtes près à accueillir, dès maintenant, une fille <strong>développeuse full-stack</strong> dans votre équipe alors n'hésité pas à me contacter.
         </p>
         <div id="bouton">
             <a href="assets/Fischer-Tatiana-Developpeur-Web.pdf" title="Lien vers le CV imprimable" target="_blank">
-                <img src="assets/images/curriculum.png" alt="vers le CV" title="Lien vers le CV imprimable">
-            <p>Vers le CV</p>
+                <img src="assets/images/curriculum.png" alt="Vers le CV imprimable">
+            <p>Vers le CV imprimable</p>
             </a>
         </div>
         <div class="col-md-offset-1 col-md-4 col-sm-5" id="contact">
@@ -28,7 +29,7 @@ require_once('inc/header.inc.php');
                 </p>
             </aside>
         </div> 
-        <aside class="col-sm-4 col-sm-offset-1" id="mobilite">
+        <aside class="col-sm-4 col-sm-offset-2" id="mobilite">
             <img src="assets/images/P_Eiffel.png" alt="dessin de la Tour Eiffel sur un fond rond gris"/>
             <p>Mobile sur Paris et sa région.</p>
         </aside>
@@ -37,6 +38,7 @@ require_once('inc/header.inc.php');
         </div>
     </div><!-- fin du conteneur -->
 </main>
+
 <?php
 
 // FOOTER -------------------------------
