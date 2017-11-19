@@ -27,6 +27,10 @@
         <!-- Latest compiled and minified JavaScript. http://getbootstrap.com/getting-started/ -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
+        <?php if(isset($js) && $js == 'anim404.js') : ?>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <?php endif; ?>
+
         <script type="text/javascript" src="assets/js/script.js"></script>
 
         <?php if(isset($js)) : ?>

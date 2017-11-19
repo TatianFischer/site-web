@@ -217,7 +217,80 @@ ul#liens li i{
 	color: gray;
 }
 
+#page404{
+    color: white;
+}
 
+#page404 p{
+    text-align: center;
+    font-size: 2rem;
+}
+
+p.ml8 {
+    position: relative;
+    margin: 1rem auto;
+    font-family: 'Gloria Hallelujah', cursive;
+    font-weight: 900;
+    color: #fff;
+    width: 50rem;
+    height: 50rem;
+}
+
+.ml8 .letters-container {
+    position: absolute;
+    width: 22rem;
+    height: 10rem;
+    transform: translate(-50%,-50%);
+    top:50%;
+    left: 50%;
+    line-height: 10rem;
+    z-index: 2;
+}
+
+.ml8 .letters {
+    position: absolute;
+    display: inline-block;
+    font-size: 10rem;
+}
+
+.ml8 .letters-left{
+    left: 0;
+}
+
+.ml8 .bang {
+    right: 0;
+}
+
+.ml8 .circle {
+    position: absolute;
+    top:0;
+    right: 0;
+    left: 0;
+    bottom:0;
+    margin:auto;
+}
+
+.ml8 .circle-white {
+    width: 35rem;
+    height: 35rem;
+    border: 2px dashed white;
+    border-radius: 50%;
+}
+
+.ml8 .circle-dark {
+    width: 25rem;
+    height: 25rem;
+    background-color: #54C0EB;
+    border-radius: 50%;
+}
+
+.ml8 .circle-dark-dashed {
+    border-radius: 50%;
+    background-color: transparent;
+    border: 3px dashed #54C0EB;
+    width: 30rem;
+    height: 30rem;
+}
 
 /*https://scotch.io/tutorials/default-sizes-for-twitter-bootstraps-media-queries*/
 /*==========  Non-Mobile First Method  ==========*/
